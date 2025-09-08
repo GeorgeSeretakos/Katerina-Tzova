@@ -18,7 +18,7 @@ export const filmsByCategory = {
       provider: "youtube",
       url: "https://youtu.be/RBJSHJeI0So?si=nvggAYYhoACLG-FJ",
       // thumbnail: "https://img.youtube.com/vi/RBJSHJeI0So/hqdefault.jpg",
-      thumbnail: "/images/weddings/37.jpg"
+      thumbnail: "/images/weddings/37.webp"
     },
     {
       id: "wed-2",
@@ -26,7 +26,7 @@ export const filmsByCategory = {
       provider: "youtube",
       url: "https://youtu.be/pd9GvbADJN4?si=vkOeHu_tdMkZ2-3y",
       // thumbnail: "https://img.youtube.com/vi/pd9GvbADJN4/hqdefault.jpg",
-      thumbnail: "/images/weddings/16.jpg"
+      thumbnail: "/images/weddings/16.webp"
     },
     {
       id: "wed-3",
@@ -34,7 +34,7 @@ export const filmsByCategory = {
       provider: "youtube",
       url: "https://youtu.be/eHx0k1jIdeo?si=X55abJuqYnT5pGg4",
       // thumbnail: "https://img.youtube.com/vi/eHx0k1jIdeo/hqdefault.jpg",
-      thumbnail: "/images/weddings/32.jpg"
+      thumbnail: "/images/weddings/32.webp"
     },
     {
       id: "wed-4",
@@ -42,7 +42,7 @@ export const filmsByCategory = {
       provider: "youtube",
       url: "https://youtu.be/ykZOGUaPPbI?si=WVJnCbaOUyn_vxs2",
       // thumbnail: "https://img.youtube.com/vi/ykZOGUaPPbI/hqdefault.jpg",
-      thumbnail: "/images/weddings/40.jpg"
+      thumbnail: "/images/weddings/40.webp"
     },
     {
       id: "wed-5",
@@ -50,7 +50,7 @@ export const filmsByCategory = {
       provider: "youtube",
       url: "https://youtu.be/pKZm4mlBCSk?si=s8xpT_Y7XrFmvddS ",
       // thumbnail: "https://img.youtube.com/vi/pKZm4mlBCSk/hqdefault.jpg",
-      thumbnail: "/images/weddings/8.jpg"
+      thumbnail: "/images/weddings/8.webp"
     },
     {
       id: "wed-6",
@@ -58,7 +58,7 @@ export const filmsByCategory = {
       provider: "youtube",
       url: "https://youtu.be/k2x7ETkexxE?si=sA03ahnUunx_jE_4",
       // thumbnail: "https://img.youtube.com/vi/k2x7ETkexxE/hqdefault.jpg",
-      thumbnail: "/images/weddings/47.jpg"
+      thumbnail: "/images/weddings/47.webp"
     },
   ],
 
@@ -69,7 +69,7 @@ export const filmsByCategory = {
       provider: "youtube",
       url: "https://youtu.be/Iiy02zum8nc?si=FevAe09zUHKlhKKT",
       // thumbnail: "https://img.youtube.com/vi/Iiy02zum8nc/hqdefault.jpg",
-      thumbnail: "/images/baptisms/60.jpg"
+      thumbnail: "/images/baptisms/60.webp"
     },
     {
       id: "bap-2",
@@ -77,7 +77,7 @@ export const filmsByCategory = {
       provider: "youtube",
       url: "https://youtu.be/TNsXG05x1eM?si=wb3ovG7UI0k8Gehi",
       // thumbnail: "https://img.youtube.com/vi/TNsXG05x1eM/hqdefault.jpg",
-      thumbnail: "/images/baptisms/11.jpg"
+      thumbnail: "/images/baptisms/11.webp"
     },
     {
       id: "bap-3",
@@ -85,7 +85,7 @@ export const filmsByCategory = {
       provider: "youtube",
       url: "https://youtu.be/3WRtc23hd-A?si=d9RhwQGhcezD_Ih8",
       // thumbnail: "https://img.youtube.com/vi/3WRtc23hd-A/hqdefault.jpg",
-      thumbnail: "/images/baptisms/56.jpg"
+      thumbnail: "/images/baptisms/56.webp"
     },
     {
       id: "bap-4",
@@ -93,7 +93,7 @@ export const filmsByCategory = {
       provider: "youtube",
       url: "https://youtu.be/zphKThaox1A?si=whbIzdtG9jXaVe8O",
       // thumbnail: "https://img.youtube.com/vi/zphKThaox1A/hqdefault.jpg",
-      thumbnail: "/images/baptisms/33.jpg"
+      thumbnail: "/images/baptisms/33.webp"
     },
     {
       id: "bap-5",
@@ -101,7 +101,7 @@ export const filmsByCategory = {
       provider: "youtube",
       url: "https://youtu.be/87mUlBWa9gU?si=ZARlSCJkI-4LVmaE",
       // thumbnail: "https://img.youtube.com/vi/87mUlBWa9gU/hqdefault.jpg",
-      thumbnail: "/images/baptisms/45.jpg"
+      thumbnail: "/images/baptisms/45.webp"
     },
   ],
 

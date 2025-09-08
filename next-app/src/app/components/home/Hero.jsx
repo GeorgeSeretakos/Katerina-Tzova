@@ -1,14 +1,13 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import Image from "next/image";
 
 export default function Hero({
-                               images = [], // ['/images/hero/1.jpg', ...]
-                               logoSrc = "", // centered overlay
-                               autoPlay = true,
-                               intervalMs = 7000,
-                             }) {
+images = [],
+logoSrc = "",
+autoPlay = true,
+intervalMs = 6500,
+}) {
   const [idx, setIdx] = useState(0);
   const touchStartX = useRef(null);
   const prefersReduced = useMemo(
@@ -74,14 +73,6 @@ export default function Hero({
             />
             {/* stronger black overlay (the "offset") */}
             <div className="absolute inset-0 bg-black/50"/>
-            {/* subtle grain on top */}
-            <div className="absolute inset-0 opacity-[.04] pointer-events-none">
-              <img
-                src="/images/ui/grain.png"
-                alt=""
-                className="w-full h-full object-cover"
-              />
-            </div>
           </div>
         ))}
       </div>

@@ -10,16 +10,15 @@ export default function HomePage() {
     <main className="bg-[#0B0B0C] text-[#EAEAEA]">
       <Hero
         images={[
-          "/images/weddings/40.jpg",
-          "/images/baptisms/60.jpg",
-          "/images/portraits/1.jpg",
-          "/images/theatre/1.jpg",
-          "/images/food-and-jewellery/4.jpg",
-          "/images/dance-school/7.jpg",
+          "/images/weddings/40.webp",
+          "/images/baptisms/60.webp",
+          "/images/portraits/1.webp",
+          "/images/theatre/1.webp",
+          "/images/food-and-jewellery/4.webp",
+          "/images/dance-school/7.webp",
         ]}
         logoSrc="/logo/white.png"
         autoPlay={true}
-        intervalMs={5500}
       />
       {/* Choose variant: "boxed" (yours) or "full" (mine with blur) */}
       <section className="max-w-6xl mx-auto px-4 py-14">
@@ -33,10 +32,6 @@ export default function HomePage() {
       <section className="mx-auto">
         <CategoryShowcase categories={categories}/>
       </section>
-
-      {/*<section className="max-w-6xl mx-auto px-4 py-10 border-4">*/}
-      {/*  <TrustStrip items={trustLogos}/>*/}
-      {/*</section>*/}
 
       <section className="max-w-3xl mx-auto px-4 py-16">
         <MiniBio/>

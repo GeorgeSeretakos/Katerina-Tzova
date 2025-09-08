@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 export default function Footer() {
   return (
     <footer className="bg-[#0B0B0C] text-[#EAEAEA] border-t border-[#C6A664]/30 py-12 px-6">
@@ -21,15 +19,24 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Right column: Communication Form */}
+        {/* Right column: Contact Form */}
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            // later: connect to backend / API route
-            alert("Form submitted (demo)");
-          }}
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
           className="space-y-4"
         >
+          {/* Hidden form-name (required for Netlify) */}
+          <input type="hidden" name="form-name" value="contact" />
+          {/* Honeypot field */}
+          <p className="hidden">
+            <label>
+              Don’t fill this out if you're human:{" "}
+              <input name="bot-field" />
+            </label>
+          </p>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
               type="text"

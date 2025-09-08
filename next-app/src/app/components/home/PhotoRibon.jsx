@@ -1,13 +1,13 @@
 export default function PhotoRibbon() {
   const images = [
-    { src: "/images/baptisms/18.jpg", alt: "Dance under lights" },
-    { src: "/images/weddings/38.jpg", alt: "Theatre scene" },
-    { src: "/images/baptisms/68.jpg", alt: "Reception sparkles" },
-    { src: "/images/weddings/28.jpg", alt: "Santorini" },
-    { src: "/images/baptisms/3.jpg", alt: "Sunset vows" },
-    { src: "/images/dance-school/4.jpg", alt: "City bridge silhouette" },
-    { src: "/images/weddings/42.jpg", alt: "Wedding moment" },
-    { src: "/images/baptisms/7.jpg", alt: "Sunset vows" },
+    { src: "/images/baptisms/18.webp", alt: "Dance under lights" },
+    { src: "/images/weddings/38.webp", alt: "Theatre scene" },
+    { src: "/images/baptisms/68.webp", alt: "Reception sparkles" },
+    { src: "/images/weddings/28.webp", alt: "Santorini" },
+    { src: "/images/baptisms/3.webp", alt: "Sunset vows" },
+    { src: "/images/dance-school/4.webp", alt: "City bridge silhouette" },
+    { src: "/images/weddings/42.webp", alt: "Wedding moment" },
+    { src: "/images/baptisms/7.webp", alt: "Sunset vows" },
   ];
 
   return (
