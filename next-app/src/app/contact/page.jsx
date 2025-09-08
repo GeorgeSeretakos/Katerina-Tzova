@@ -17,9 +17,9 @@ export default function ContactPage() {
 
       {/* Subtitle + icon */}
       <div className="max-w-3xl mx-auto px-4 text-center">
-        <p className="text-sm md:text-base text-[#EAEAEA]/70 mb-6">
+        <h1 className="font-great-vibes !font-normal mb-6">
           I’d love to hear about your story.
-        </p>
+        </h1>
         <p className="text-sm md:text-base text-[#EAEAEA]/70 mb-6">
           Reach out and let’s create something timeless together.
         </p>
