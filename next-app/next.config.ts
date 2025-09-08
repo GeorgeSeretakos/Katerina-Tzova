@@ -1,14 +1,10 @@
 import type { NextConfig } from "next";
-import path from "path";
-import fs from "fs";
 
 const nextConfig: NextConfig = {
-    // Optional: Ensure `public/uploads` exists
+    images: {
+        unoptimized: true, // <-- no _ipx; <Image> behaves like <img>
+    },
     webpack: (config) => {
-        const uploadDir = path.join(process.cwd(), "public", "uploads");
-        if (!fs.existsSync(uploadDir)) {
-            fs.mkdirSync(uploadDir, { recursive: true });
-        }
         return config;
     },
 };
