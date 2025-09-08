@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
 
 const categories = [
   { slug: "weddings",  label: "Weddings" },
@@ -19,7 +18,7 @@ export default function FilmsLayout({ children }) {
     <section className="min-h-screen bg-[#0B0B0C] text-[#EAEAEA]">
       <div className="py-10">
         <div className="flex items-center justify-center gap-4">
-          <h1 className="text-3xl md:text-4xl font-serif">Films</h1>
+          <h1 className="font-great-vibes !font-normal">Films</h1>
           <img
             src="/icons/films.png"
             alt="Delicate hand-drawn sketch"

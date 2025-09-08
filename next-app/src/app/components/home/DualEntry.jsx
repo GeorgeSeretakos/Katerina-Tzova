@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function DualEntry({ variant = "boxed", stills, films }) {
   if (variant === "boxed") {
@@ -11,9 +10,10 @@ export default function DualEntry({ variant = "boxed", stills, films }) {
           href="/stills"
           className="group border border-[#C6A664]/40 rounded-xl p-8 bg-[#121214] hover:border-[#D4AF37] transition"
         >
-          <h2 className="text-2xl md:text-3xl">Stills</h2>
+          <h2 className="font-serif">Stills</h2>
           <p className="mt-2 text-sm text-[#EAEAEA]/70">
-            Φωτογραφικά στιγμιότυπα από γάμους, βαπτίσεις, θέατρο, κινηματογράφο & πορτρέτα.
+            Timeless photographs capturing the essence of weddings, baptisms,
+            theatre, film, and portraits — stories told through light and detail.
           </p>
           <div className="mt-6 h-48 md:h-64 lg:h-80 rounded-md overflow-hidden relative">
             {stills?.src ? (
@@ -23,7 +23,7 @@ export default function DualEntry({ variant = "boxed", stills, films }) {
                 className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
               />
             ) : (
-              <div className="w-full h-full bg-black/30"/>
+              <div className="w-full h-full bg-black/30" />
             )}
           </div>
         </Link>
@@ -33,9 +33,9 @@ export default function DualEntry({ variant = "boxed", stills, films }) {
           href="/films"
           className="group border border-[#C6A664]/40 rounded-xl p-8 bg-[#121214] hover:border-[#D4AF37] transition"
         >
-          <h2 className="text-2xl md:text-3xl">Films</h2>
-          <p className="mt-2 text-sm text-[#EAEAEA]/70">
-            Επιλεγμένα βίντεο με κινηματογραφική προσέγγιση και έμφαση στο συναίσθημα.
+          <h2 className="font-serif">Films</h2>
+          <p className="mt-2 text-[#EAEAEA]/70">
+            Cinematic films that capture emotion and atmosphere, turning moments into lasting stories.
           </p>
           <div className="mt-6 h-48 md:h-64 lg:h-80 rounded-md overflow-hidden relative">
             {films?.src ? (
@@ -45,7 +45,7 @@ export default function DualEntry({ variant = "boxed", stills, films }) {
                 className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
               />
             ) : (
-              <div className="w-full h-full bg-black/30"/>
+              <div className="w-full h-full bg-black/30" />
             )}
           </div>
         </Link>
@@ -68,11 +68,12 @@ export default function DualEntry({ variant = "boxed", stills, films }) {
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           />
         )}
-        <div className="absolute inset-0 bg-black/35 backdrop-blur-[2px] group-hover:bg-black/30 transition"/>
+        <div className="absolute inset-0 bg-black/35 backdrop-blur-[2px] group-hover:bg-black/30 transition" />
         <div className="absolute bottom-0 left-0 p-6">
           <h2 className="text-2xl md:text-3xl">Stills</h2>
           <p className="mt-2 text-sm text-[#EAEAEA]/85 max-w-xs">
-            Φωτογραφικά στιγμιότυπα από γάμους, βαπτίσεις, θέατρο, κινηματογράφο & πορτρέτα.
+            Timeless photographs capturing weddings, baptisms, theatre, film, and
+            portraits — authentic moments preserved with artistry.
           </p>
         </div>
       </Link>
@@ -89,11 +90,11 @@ export default function DualEntry({ variant = "boxed", stills, films }) {
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           />
         )}
-        <div className="absolute inset-0 bg-black/35 backdrop-blur-[2px] group-hover:bg-black/30 transition"/>
+        <div className="absolute inset-0 bg-black/35 backdrop-blur-[2px] group-hover:bg-black/30 transition" />
         <div className="absolute bottom-0 left-0 p-6">
           <h2 className="text-2xl md:text-3xl">Films</h2>
           <p className="mt-2 text-sm text-[#EAEAEA]/85 max-w-xs">
-            Επιλεγμένα βίντεο με κινηματογραφική προσέγγιση και έμφαση στο συναίσθημα.
+            Cinematic films that capture emotion and atmosphere, turning moments into lasting stories.
           </p>
         </div>
       </Link>

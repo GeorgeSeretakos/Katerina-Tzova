@@ -25,8 +25,8 @@ export default function CategoryShowcase({ categories = [] }) {
               i % 2 === 0 ? "" : "md:order-1"
             }`}
           >
-            <h2 className="text-2xl md:text-3xl font-serif mb-4">{cat.title}</h2>
-            <p className="text-sm md:text-base text-[#EAEAEA]/80 mb-6">
+            <h1 className="font-great-vibes !font-normal mb-4">{cat.title}</h1>
+            <p className="text-[#EAEAEA]/80 mb-6 max-w-lg">
               {cat.description}
             </p>
             <Link href={cat.href} className="btn-gold">

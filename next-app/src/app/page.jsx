@@ -12,8 +12,8 @@ export default function HomePage() {
         images={[
           "/images/weddings/40.webp",
           "/images/baptisms/60.webp",
-          "/images/portraits/1.webp",
-          "/images/theatre/1.webp",
+          "/images/portraits/1.jpg",
+          "/images/theatre/1.jpg",
           "/images/food-and-jewellery/4.webp",
           "/images/dance-school/7.webp",
         ]}
@@ -24,8 +24,8 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-4 py-14">
         <DualEntry
           variant="boxed"
-          stills={{src: "/images/weddings/45.jpg", alt: "Stills cover"}}
-          films={{src: "/images/weddings/32.jpg", alt: "Films cover"}}
+          stills={{src: "/images/weddings/45.webp", alt: "Stills cover"}}
+          films={{src: "/images/weddings/32.webp", alt: "Films cover"}}
         />
       </section>
 

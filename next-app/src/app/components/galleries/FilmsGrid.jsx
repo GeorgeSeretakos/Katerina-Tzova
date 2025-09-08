@@ -25,7 +25,6 @@ export default function FilmsGrid({ items = [] }) {
     <div className="grid grid-cols-1 gap-8 lg:gap-10 mb-16">
       {items.map((item) => {
         const isActive = activeId === item.id;
-        const aspect = item.aspect || "aspect-[4/3]"; // keep aspect tweak if you want
 
         return (
           <div
@@ -43,9 +42,9 @@ export default function FilmsGrid({ items = [] }) {
 
             {/* Caption */}
             {item.title && (
-              <div className="h-[60px] flex items-center justify-center px-3 text-[#EAEAEA]/90 border-t border-white/10 text-center font-great-vibes text-xl md:text-2xl lg:text-3xl">
+              <h3 className="h-[60px] flex items-center justify-center px-3 text-[#EAEAEA]/90 border-t border-white/10 text-center font-serif">
                 {item.title}
-              </div>
+              </h3>
             )}
           </div>
         );

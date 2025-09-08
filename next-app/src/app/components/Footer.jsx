@@ -4,19 +4,67 @@ export default function Footer() {
   return (
     <footer className="bg-[#0B0B0C] text-[#EAEAEA] border-t border-[#C6A664]/30 py-12 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* Left column: Logo */}
-        <div className="flex flex-col items-center justify-center text-center">
+        {/* Left column: Logo + Info */}
+        <div className="flex flex-col items-center justify-center text-center space-y-4">
           <img
             src="/logo/white.png"
             alt="Katerina Tzova"
             width={220}
             height={80}
-            className="mb-6"
+            className="mb-4"
           />
-          <p className="text-sm text-[#EAEAEA]/70 max-w-sm">
-            Capturing stories with cinematic light and presence. Weddings,
-            baptisms, portraits, theatre &amp; film.
+          {/*<p className="text-sm text-[#EAEAEA]/70 max-w-sm">*/}
+          {/*  Capturing stories with cinematic light and presence. Weddings,*/}
+          {/*  baptisms, portraits, theatre &amp; film.*/}
+          {/*</p>*/}
+
+          {/* Phone */}
+          <p>Tel:{" "}
+            <a href="tel:+306974184885" className="hover:underline">
+              +30 697 418 4885
+            </a>
           </p>
+
+          {/* Social icons */}
+          <div className="flex items-center gap-4">
+            <a
+              href="https://facebook.com/kater.tzova"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="hover:text-[#D4AF37] transition"
+            >
+              <img src="/icons/facebook.png" alt="Facebook" className="w-5 h-5"/>
+            </a>
+            <a
+              href="https://www.youtube.com/@katerinatzova9005"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="hover:text-[#D4AF37] transition"
+            >
+              <img src="/icons/youtube.png" alt="YouTube" className="w-5 h-5"/>
+            </a>
+            <a
+              href="https://www.instagram.com/katerinatzova/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="hover:text-[#D4AF37] transition"
+            >
+              <img src="/icons/instagram.png" alt="Instagram" className="w-5 h-5"/>
+            </a>
+            {/*<a*/}
+            {/*  href="https://vimeo.com/yourprofile"*/}
+            {/*  target="_blank"*/}
+            {/*  rel="noopener noreferrer"*/}
+            {/*  aria-label="Vimeo"*/}
+            {/*  className="hover:text-[#D4AF37] transition"*/}
+            {/*>*/}
+            {/*  <img src="/icons/vimeo.png" alt="Vimeo" className="w-5 h-5"/>*/}
+            {/*</a>*/}
+          </div>
+
         </div>
 
         {/* Right column: Contact Form */}
@@ -27,13 +75,10 @@ export default function Footer() {
           data-netlify-honeypot="bot-field"
           className="space-y-4"
         >
-          {/* Hidden form-name (required for Netlify) */}
-          <input type="hidden" name="form-name" value="contact" />
-          {/* Honeypot field */}
+          <input type="hidden" name="form-name" value="contact"/>
           <p className="hidden">
             <label>
-              Don’t fill this out if you're human:{" "}
-              <input name="bot-field" />
+              Don’t fill this out if you're human: <input name="bot-field" />
             </label>
           </p>
 

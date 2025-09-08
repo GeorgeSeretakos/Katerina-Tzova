@@ -33,5 +33,5 @@ export const stillsByCategory = {
   portraits:            makeItems("portraits", 6, "jpg"),
   theatre:              makeItems("theatre", 5, "jpg"),
   "food-and-jewellery": makeItems("food-and-jewellery", 14, "webp"),
-  "dance-school":       makeItems("dance-school", 9, "webp"),
+  "dance-school":       makeItems("dance-school", 8, "webp"),
 };

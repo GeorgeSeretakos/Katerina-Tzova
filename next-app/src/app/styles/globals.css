@@ -75,11 +75,10 @@ li {
 @tailwind components;
 @tailwind utilities;
 
-/* custom button style */
 .btn-gold {
-  @apply inline-block border border-[#D4AF37] px-5 py-3 rounded-md
-  hover:bg-[#121214] transition-colors
-  focus:outline-none focus:ring-2 focus:ring-[#1C86D1];
+  @apply inline-block px-3 py-1 rounded-lg text-sm transition
+  text-[#EAEAEA]/80 hover:bg-[#D4AF37] hover:text-black
+  border border-[#D4AF37];
 }
 
 .hero-arrow {

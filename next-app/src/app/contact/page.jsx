@@ -1,11 +1,18 @@
-import Image from "next/image";
-
 export default function ContactPage() {
   return (
     <section className="bg-[#0B0B0C] text-[#EAEAEA] mb-12">
       {/* Title block, same style as Stills */}
-      <div className="py-10 text-center">
-        <h1 className="text-3xl md:text-4xl font-serif">Contact</h1>
+      <div className="py-10">
+        <div className="flex items-center justify-center gap-4">
+          <h1 className="font-great-vibes !font-normal">Contact</h1>
+          <img
+            src="/icons/call-back.png" // reuse same icon for now
+            alt="Delicate hand-drawn sketch"
+            width={64}
+            height={64}
+            className="opacity-80"
+          />
+        </div>
       </div>
 
       {/* Subtitle + icon */}
@@ -17,15 +24,15 @@ export default function ContactPage() {
           Reach out and let’s create something timeless together.
         </p>
 
-        <div className="flex justify-center">
-          <img
-            src="/icons/call-back.png"
-            alt="Contact Icon"
-            width={64}
-            height={64}
-            className="opacity-90"
-          />
-        </div>
+        {/*<div className="flex justify-center">*/}
+        {/*  <img*/}
+        {/*    src="/icons/call-back.png"*/}
+        {/*    alt="Contact Icon"*/}
+        {/*    width={64}*/}
+        {/*    height={64}*/}
+        {/*    className="opacity-90"*/}
+        {/*  />*/}
+        {/*</div>*/}
       </div>
     </section>
   );
