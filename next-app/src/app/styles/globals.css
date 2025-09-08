@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #EAEAEA;
+  --foreground: #0B0B0C;
   --font-sans: var(--font-manrope), var(--font-open-sans), var(--font-roboto), ui-serif, sans-serif;
 }
 
@@ -20,14 +20,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0B0B0C;
+    --foreground: #EAEAEA;
   }
 }
 
 body {
-  background: white;
-  color: black;
+  background: #0B0B0C;
+  color: #EAEAEA;
   font-family: var(--font-sans);
 }
 
@@ -70,3 +70,27 @@ li {
 .title-black {
   @apply text-3xl font-bold mb-6 text-black;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom button style */
+.btn-gold {
+  @apply inline-block border border-[#D4AF37] px-5 py-3 rounded-md
+  hover:bg-[#121214] transition-colors
+  focus:outline-none focus:ring-2 focus:ring-[#1C86D1];
+}
+
+.hero-arrow {
+  @apply absolute top-1/2 -translate-y-1/2 z-10
+  flex items-center justify-center
+  h-10 w-10 md:h-12 md:w-12 rounded-full
+  bg-black/35 hover:bg-black/45
+  border border-[#D4AF37]/60 hover:border-[#D4AF37]
+  text-[#EAEAEA] text-2xl md:text-3xl leading-none
+  cursor-pointer transition
+  focus:outline-none focus:ring-0;
+}
+
+

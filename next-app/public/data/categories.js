@@ -1,0 +1,51 @@
+export const categories = [
+  {
+    slug: "weddings",
+    title: "Weddings",
+    description: "Intimate stories of vows and celebration, captured with light and emotion.",
+    image: "/images/weddings/47.jpg",
+    href: "/stills/weddings",
+  },
+  {
+    slug: "baptisms",
+    title: "Baptisms",
+    description: "Sacred beginnings preserved with warmth and delicate detail.",
+    image: "/images/baptisms/33.jpg",
+    href: "/stills/baptisms",
+  },
+  {
+    slug: "portraits",
+    title: "Portraits",
+    description: "Personal portraits that honor individuality and presence.",
+    image: "/images/portraits/2.jpg",
+    href: "/stills/portraits",
+  },
+  {
+    slug: "theatre",
+    title: "Theatre",
+    description: "Moments on stage, alive with light, presence, and dramatic atmosphere.",
+    image: "/images/theatre/2.jpg",
+    href: "/stills/theatre",
+  },
+  {
+    slug: "food-and-jewellery",
+    title: "Food & Jewellery",
+    description: "A curated look at culinary creations and handcrafted jewellery, photographed with detail and elegance to highlight texture, color, and artistry.",
+    image: "/images/food-and-jewellery/1.jpg",
+    href: "/stills/portraits",
+  },
+  {
+    slug: "dance-school",
+    title: "Dance School",
+    description: "A curated look at culinary creations and handcrafted jewellery, photographed with detail and elegance to highlight texture, color, and artistry.",
+    image: "/images/dance-school/1.jpg",
+    href: "/stills/portraits",
+  },
+  {
+    slug: "films",
+    title: "Films",
+    description: "Cinematic frames that linger beyond the screen, both still and moving.",
+    image: "/images/baptisms/9.jpg",
+    href: "/stills/movies",
+  },
+];

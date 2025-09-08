@@ -1,94 +1,50 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import {useEffect, useState} from "react";
-import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    setMobileOpen(false);
-  }, [pathname]);
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <nav className="bg-white text-black shadow right-0 z-50 fixed top-0 w-full">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 sm:h-16 lg:h-18">
-          {/* Logo */}
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <img
-                src="/icons/logo.jpg"
-                alt="Logo"
-                className="h-10 sm:h-12 lg:h-16 w-auto"
-              />
-              <img
-                src="/icons/Believe-in-Yourself-2.png"
-                alt="Logo"
-                className="h-8 sm:h-10 lg:h-12 w-auto"
-              />
-            </Link>
-          </div>
-
-          {/* Desktop Links */}
-          <div className="hidden sm:flex sm:space-x-4 lg:space-x-5 items-center font-semibold text-xs lg:text-sm">
-            <NavItem href="/" label="Αρχική Σελίδα" />
-            <NavItem href="/about-us" label="Ποιοί Είμαστε" />
-            <NavItem href="/services" label="Υπηρεσίες" />
-            <NavItem href="/office" label="Ο Χώρος" />
-            <NavItem href="/blog" label="Blog" />
-            <NavItem href="/contact" label="Επικοινωνία" />
-            <NavItem href="/login" label="Σύνδεση" />
-          </div>
-
-
-          {/* Mobile Menu Button */}
-          <div className="sm:hidden">
-            <button
-              onClick={() => setMobileOpen(!mobileOpen)}
-              className="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-800"
-            >
-              {mobileOpen ? <X size={24}/> : <Menu size={24}/>}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Links */}
-      {mobileOpen && (
-        <div className="sm:hidden bg-white shadow-md border-t">
-          <div className="flex flex-col space-y-2 px-4 py-4 font-medium">
-            <NavItem href="/" label="Αρχική Σελίδα" />
-            <NavItem href="/about-us" label="Ποιοί Είμαστε" />
-            <NavItem href="/office" label="Ο Χώρος" />
-            <NavItem href="/services" label="Υπηρεσίες" />
-            <NavItem href="/blog" label="Blog" />
-            <NavItem href="/contact" label="Επικοινωνία" />
-            <NavItem href="/login" label="Σύνδεση" />
-          </div>
-        </div>
-      )}
-    </nav>
-  );
-}
-
-function NavItem({href, label}) {
-  const pathname = usePathname();
-  const isActive = pathname === href;
-
-  return (
-    <Link
-      href={href}
-      className={`inline-flex items-center px-2 py-1 rounded-sm transition whitespace-nowrap
-        ${isActive
-        ? "text-teal-800 border-b-2 border-teal-800"
-        : "hover:text-teal-800 hover:border-b-2 hover:border-teal-800"}
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-500 ${
+        scrolled
+          ? "bg-[#0B0B0C] border-b border-[#C6A664]/30"
+          : "bg-transparent"
       }`}
     >
-      {label}
-    </Link>
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+        {/* Logo */}
+        <Link href="/" className="relative w-32 h-10">
+          <img
+            src="/logo/horizontal_white.png"
+            alt="Katerina Tzova"
+            className="object-contain w-full h-full"
+          />
+        </Link>
+
+        {/* Desktop links */}
+        <div className="hidden md:flex gap-8 text-[#EAEAEA]">
+          <Link href="/" className="hover:text-[#D4AF37]">Home</Link>
+          <Link href="/stills" className="hover:text-[#D4AF37]">Stills</Link>
+          <Link href="/films" className="hover:text-[#D4AF37]">Films</Link>
+          <Link href="/about" className="hover:text-[#D4AF37]">About</Link>
+          <Link href="/contact" className="hover:text-[#D4AF37]">Contact</Link>
+        </div>
+
+        {/* Mobile drawer trigger */}
+        <div className="md:hidden">
+          {/* MobileDrawer button will go here */}
+        </div>
+      </div>
+    </nav>
   );
 }
