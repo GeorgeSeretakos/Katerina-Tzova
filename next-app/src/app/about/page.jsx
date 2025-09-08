@@ -161,19 +161,16 @@ export default function AboutPage() {
           <h3 className="font-serif">Roots & Education</h3>
           <ul className="list-disc list-inside space-y-2 text-[#EAEAEA]/80">
             <li>
-              <span className="font-semibold">Origins:</span> Corinth (1984);
-              Constantinopolitan & Peloponnesian family
+              Origins: Corinth (1984); Constantinopolitan & Peloponnesian family
             </li>
             <li>
               ATEI Athens (now UniWA), Photography & Audiovisual Arts — 2009
             </li>
             <li>
-              <span className="font-semibold">ERASMUS:</span> Università degli
-              Studi di Firenze
+              ERASMUS: Università degli Studi di Firenze
             </li>
             <li>
-              <span className="font-semibold">M.A.:</span> University of the
-              Aegean — Culture & Documentary Film Production
+              M.A.: University of the Aegean — Culture & Documentary Film Production
             </li>
             <li>Seminars in documentary & cinematography</li>
           </ul>
