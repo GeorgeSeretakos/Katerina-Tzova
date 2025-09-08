@@ -35,7 +35,7 @@ export default function AboutPage() {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden border border-[#C6A664]/30">
               <img
-                src="/images/katerina/1.jpg"
+                src="/images/katerina/2.jpg"
                 alt="Katerina Tzova portrait"
                 className="w-full h-[420px] object-cover"
               />
