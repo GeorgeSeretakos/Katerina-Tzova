@@ -16,9 +16,6 @@ export default function HomePage() {
           "/images/theatre/1.jpg",
           "/images/food-and-jewellery/4.jpg",
           "/images/dance-school/7.jpg",
-          // "/images/weddings/.jpg",
-          // "/images/theatre/.jpg",
-          // "/images/baptisms/.jpg",
         ]}
         logoSrc="/logo/white.png"
         autoPlay={true}
