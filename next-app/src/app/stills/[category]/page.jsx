@@ -2,8 +2,8 @@ import { notFound } from "next/navigation";
 import StillsGrid from "../../components/galleries/StillsGrid";
 import { stillsByCategory } from "../../../../public/data/stills";
 
-export default async function StillsCategoryPage({ params }) {
-  const { category } = await params;
+export default function StillsCategoryPage({ params }) {
+  const { category } = params;
   const items = stillsByCategory[category];
   if (!items) return notFound();
 
