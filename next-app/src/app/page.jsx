@@ -1,7 +1,7 @@
 import Hero from "../app/components/home/Hero";
 import DualEntry from "../app/components/home/DualEntry";
 import CategoryShowcase from "./components/home/CategoryShowCase";
-import {categories} from "../../public/data/categories";
+import {categories} from "../data/categories";
 import MiniBio from "../app/components/home/MiniBio";
 
 
