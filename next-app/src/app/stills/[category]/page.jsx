@@ -1,9 +1,19 @@
 import StillsGrid from "../../components/galleries/StillsGrid";
 import { stillsByCategory } from "../../../data/stills";
+import {categories} from "../../../data/categories";
 
-export default async function StillsCategoryPage({ params }) {
-  const { category } = await params;
+export const dynamic = "force-static";
+
+export function generateStaticParams() {
+  return Object.keys(stillsByCategory).map((category) => ({
+    category,
+  }));
+}
+
+export default function StillsCategoryPage({ params }) {
+  const { category } = params;
   const items = stillsByCategory[category];
+
   if (!items) {
     return (
       <div className="text-center text-[#EAEAEA]/70">
