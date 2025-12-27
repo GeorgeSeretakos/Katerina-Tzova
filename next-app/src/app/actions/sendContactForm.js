@@ -1,6 +1,6 @@
 "use server";
 
-import { sendContactMail } from "@lib/sendContactMail";
+import { sendContactMail } from "../../../lib/sendContactMail";
 import { redirect } from "next/navigation";
 
 export async function sendContactForm(formData) {
