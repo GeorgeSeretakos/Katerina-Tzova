@@ -29,10 +29,10 @@ export default function FilmsGrid({ items = [] }) {
         return (
           <div
             key={item.id}
-            className="group border border-white/10 rounded-lg overflow-hidden bg-black/20 w-4/5 mx-auto mb-32"
+            className="group border border-white/10 rounded-lg overflow-hidden bg-black/20 w-screen -mx-4 lg:w-4/5 lg:mx-auto mb-32"
           >
             {/* Player area */}
-            <div className="relative w-full h-[60vh]">
+            <div className="relative w-full h-[40vh] sm:h-[45vh] lg:h-[60vh]">
               {isActive ? (
                 <Player item={item} onClose={stop}/>
               ) : (
