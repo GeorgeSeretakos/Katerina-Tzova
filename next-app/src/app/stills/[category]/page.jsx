@@ -13,10 +13,6 @@ export default async function StillsCategoryPage({ params }) {
   const { category } = await params;
   const items = stillsByCategory[category];
 
-  console.log("Params: ", params);
-  console.log("Category: ", category);
-  console.log("Items: ", items);
-
   if (!items) {
     return (
       <div className="text-center text-[#EAEAEA]/70">
