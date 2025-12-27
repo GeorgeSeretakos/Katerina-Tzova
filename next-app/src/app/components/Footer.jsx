@@ -1,5 +1,7 @@
 "use client";
 
+import {sendContactForm} from "@/app/actions/sendContactForm";
+
 export default function Footer() {
   return (
     <footer className="bg-[#0B0B0C] text-[#EAEAEA] border-t border-[#C6A664]/30 py-12 px-6">
@@ -68,32 +70,19 @@ export default function Footer() {
         </div>
 
         {/* Right column: Contact Form */}
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          action="/thank-you"
-          className="space-y-4"
-        >
-          <input type="hidden" name="form-name" value="contact"/>
-          <p className="hidden">
-            <label>
-              Don’t fill this out if you're human: <input name="bot-field" />
-            </label>
-          </p>
+        <form action={sendContactForm} className="space-y-4">
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
               type="text"
-              name="firstName"
+              name="first_name"
               placeholder="First Name"
               required
               className="w-full rounded-md bg-[#121214] border border-[#C6A664]/30 px-3 py-2 text-sm focus:border-[#D4AF37] focus:outline-none"
             />
             <input
               type="text"
-              name="lastName"
+              name="last_name"
               placeholder="Last Name"
               required
               className="w-full rounded-md bg-[#121214] border border-[#C6A664]/30 px-3 py-2 text-sm focus:border-[#D4AF37] focus:outline-none"
@@ -117,7 +106,7 @@ export default function Footer() {
           </div>
 
           <select
-            name="eventType"
+            name="event_type"
             className="w-full rounded-md bg-[#121214] border border-[#C6A664]/30 px-3 py-2 text-sm focus:border-[#D4AF37] focus:outline-none"
             required
           >
