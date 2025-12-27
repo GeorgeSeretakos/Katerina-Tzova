@@ -15,7 +15,7 @@ export default function Footer() {
           />
           {/*<p className="text-sm text-[#EAEAEA]/70 max-w-sm">*/}
           {/*  Capturing stories with cinematic light and presence. Weddings,*/}
-          {/*  baptisms, portraits, theatre &amp; film.*/}
+          {/*  baptisms, portraits, films-and-theatre &amp; film.*/}
           {/*</p>*/}
 
           {/* Phone */}

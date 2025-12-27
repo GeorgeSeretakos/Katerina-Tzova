@@ -38,7 +38,7 @@ export const filmsByCategory = {
     },
     {
       id: "wed-4",
-      title: "Xristina & Nikos",
+      title: "Christina & Nikos",
       provider: "youtube",
       url: "https://youtu.be/ykZOGUaPPbI?si=WVJnCbaOUyn_vxs2",
       // thumbnail: "https://img.youtube.com/vi/ykZOGUaPPbI/hqdefault.jpg",
@@ -60,6 +60,20 @@ export const filmsByCategory = {
       // thumbnail: "https://img.youtube.com/vi/k2x7ETkexxE/hqdefault.jpg",
       thumbnail: "/images/weddings/47.webp"
     },
+    {
+      id: "wed-7",
+      title: "Marianna & Kostas",
+      provider: "youtube",
+      url: "https://www.youtube.com/watch?v=r3jpzbzN9N8",
+      thumbnail: "/images/weddings/39.webp"
+    },
+    {
+      id: "wed-8",
+      title: "Lefteris & Glykeria",
+      provider: "youtube",
+      url: "https://www.youtube.com/watch?v=XkFyVM73HmU",
+      thumbnail: "/images/weddings/15.webp"
+    }
   ],
 
   baptisms: [

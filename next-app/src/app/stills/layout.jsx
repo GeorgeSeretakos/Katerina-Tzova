@@ -6,10 +6,8 @@ import { usePathname } from "next/navigation";
 const categories = [
   { slug: "weddings",           label: "Weddings" },
   { slug: "baptisms",           label: "Baptisms" },
-  { slug: "portraits",          label: "Portraits" },
-  { slug: "theatre",            label: "Theatre" },
-  { slug: "food-and-jewellery", label: "Food & Jewellery" },
-  { slug: "dance-school",       label: "Dance School" },
+  { slug: "films-and-theatre",  label: "Films & Theatre" },
+  { slug: "advertisement",      label: "Advertisement" },
 ];
 
 export default function StillsLayout({ children }) {

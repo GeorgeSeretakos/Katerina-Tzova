@@ -12,8 +12,8 @@ export default function HomePage() {
         images={[
           "/images/weddings/40.webp",
           "/images/baptisms/60.webp",
-          "/images/portraits/1.jpg",
-          "/images/theatre/1.jpg",
+          "/images/portraits/31.jpg",
+          "/images/films-and-theatre/31.jpg",
           "/images/food-and-jewellery/4.webp",
           "/images/dance-school/7.webp",
         ]}

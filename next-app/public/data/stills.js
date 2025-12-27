@@ -1,13 +1,9 @@
-// data/stills.js
-
 // --- Pretty titles (match route slugs exactly) ---
 export const prettyTitles = {
   weddings: "Weddings",
   baptisms: "Baptisms",
-  portraits: "Portraits",
-  theatre: "Theatre",
-  "food-and-jewellery": "Food & Jewellery",
-  "dance-school": "Dance School",
+  "films-and-theatre": "Films & Theatre",
+  "advertisement": "Advertisement"
 };
 
 // Simple helper to build N items for a category.
@@ -30,8 +26,6 @@ const toPretty = (slug) =>
 export const stillsByCategory = {
   weddings:             makeItems("weddings", 52, "webp"),
   baptisms:             makeItems("baptisms", 76, "webp"),
-  portraits:            makeItems("portraits", 6, "jpg"),
-  theatre:              makeItems("theatre", 5, "jpg"),
-  "food-and-jewellery": makeItems("food-and-jewellery", 14, "webp"),
-  "dance-school":       makeItems("dance-school", 8, "webp"),
+  "films-and-theatre":  makeItems("films-and-theatre", 5, "jpg"),
+  advertisement:        makeItems("advertisement", 33, "jpg"),
 };
