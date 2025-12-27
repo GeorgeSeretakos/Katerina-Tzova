@@ -1,7 +1,5 @@
 "use client";
 
-import {sendContactForm} from "@/app/actions/sendContactForm";
-
 export default function Footer() {
   return (
     <footer className="bg-[#0B0B0C] text-[#EAEAEA] border-t border-[#C6A664]/30 py-12 px-6">
@@ -70,7 +68,20 @@ export default function Footer() {
         </div>
 
         {/* Right column: Contact Form */}
-        <form action={sendContactForm} className="space-y-4">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          className="space-y-4"
+        >
+
+          <input type="hidden" name="form-name" value="contact"/>
+          <p hidden>
+            <label>
+              Don’t fill this out: <input name="bot-field"/>
+            </label>
+          </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
@@ -113,10 +124,9 @@ export default function Footer() {
             <option value="">Type of Event</option>
             <option>Wedding</option>
             <option>Baptism</option>
-            <option>Portrait</option>
             <option>Theatre</option>
             <option>Movie</option>
-            <option>Dance School</option>
+            <option>Advertisement</option>
             <option>Other Event</option>
           </select>
 
