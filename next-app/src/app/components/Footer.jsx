@@ -86,14 +86,14 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
               type="text"
-              name="first_name"
+              name="firstName"
               placeholder="First Name"
               required
               className="w-full rounded-md bg-[#121214] border border-[#C6A664]/30 px-3 py-2 text-sm focus:border-[#D4AF37] focus:outline-none"
             />
             <input
               type="text"
-              name="last_name"
+              name="lastName"
               placeholder="Last Name"
               required
               className="w-full rounded-md bg-[#121214] border border-[#C6A664]/30 px-3 py-2 text-sm focus:border-[#D4AF37] focus:outline-none"
@@ -117,7 +117,7 @@ export default function Footer() {
           </div>
 
           <select
-            name="event_type"
+            name="eventType"
             className="w-full rounded-md bg-[#121214] border border-[#C6A664]/30 px-3 py-2 text-sm focus:border-[#D4AF37] focus:outline-none"
             required
           >
