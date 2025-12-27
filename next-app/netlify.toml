@@ -3,3 +3,8 @@ command = "npm run build"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+from = "/stills"
+to = "/stills/weddings"
+status = 301

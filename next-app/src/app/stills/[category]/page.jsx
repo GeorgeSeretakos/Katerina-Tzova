@@ -2,14 +2,19 @@ import { notFound } from "next/navigation";
 import StillsGrid from "../../components/galleries/StillsGrid";
 import { stillsByCategory } from "../../../../public/data/stills";
 
-export default function StillsCategoryPage({ params }) {
-  const { category } = params;
+export default async function StillsCategoryPage({ params }) {
+  const { category } = await params;
   const items = stillsByCategory[category];
-  if (!items) return notFound();
+  if (!items) {
+    return (
+      <div className="text-center text-[#EAEAEA]/70">
+        Category not found
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6">
-      {/*<h2 className="text-xl md:text-2xl">{pretty[category] ?? category}</h2>*/}
       <StillsGrid items={items} />
     </div>
   );
