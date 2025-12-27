@@ -1,6 +1,5 @@
-import { notFound } from "next/navigation";
 import StillsGrid from "../../components/galleries/StillsGrid";
-import { stillsByCategory } from "../../../../public/data/stills";
+import { stillsByCategory } from "../../../data/stills";
 
 export default async function StillsCategoryPage({ params }) {
   const { category } = await params;
