@@ -6,8 +6,9 @@ import { usePathname } from "next/navigation";
 const categories = [
   { slug: "weddings",  label: "Weddings" },
   { slug: "baptisms",  label: "Baptisms" },
-  { slug: "movies",   label: "Movies"  },
-  { slug: "theatre", label: "Theatre"},
+  { slug: "movies",   label: "Movies" },
+  { slug: "theatre", label: "Theatre" },
+  { slug: "advertisement", label: "Advertisement" }
 ];
 
 export default function FilmsLayout({ children }) {

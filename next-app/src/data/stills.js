@@ -2,6 +2,7 @@
 export const prettyTitles = {
   weddings: "Weddings",
   baptisms: "Baptisms",
+  portraits: "Portraits",
   "films-and-theatre": "Films & Theatre",
   "advertisement": "Advertisement"
 };
@@ -26,6 +27,7 @@ const toPretty = (slug) =>
 export const stillsByCategory = {
   weddings:             makeItems("weddings", 52, "webp"),
   baptisms:             makeItems("baptisms", 76, "webp"),
-  "films-and-theatre":  makeItems("films-and-theatre", 5, "jpg"),
-  advertisement:        makeItems("advertisement", 33, "jpg"),
+  portraits:            makeItems("portraits", 13, "jpg"),
+  "films-and-theatre":  makeItems("films-and-theatre", 26, "jpg"),
+  advertisement:        makeItems("advertisement", 41, "jpg"),
 };

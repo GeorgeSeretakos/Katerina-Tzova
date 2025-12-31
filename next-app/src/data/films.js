@@ -14,108 +14,97 @@ export const filmsByCategory = {
   weddings: [
     {
       id: "wed-1",
-      title: "Elia & Maurizio – Wedding Trailer",
+      title: "Christina & Nikos",
       provider: "youtube",
-      url: "https://youtu.be/RBJSHJeI0So?si=nvggAYYhoACLG-FJ",
-      // thumbnail: "https://img.youtube.com/vi/RBJSHJeI0So/hqdefault.jpg",
-      thumbnail: "/images/weddings/37.webp"
+      url: "https://www.youtube.com/watch?v=ykZOGUaPPbI",
+      thumbnail: "/images/thumbnails/weddings/W_Christina_Nikos.jpg"
     },
     {
       id: "wed-2",
-      title: "Mel & Sof - Wedding Teaser",
+      title: "Thodoris & Maria",
       provider: "youtube",
-      url: "https://youtu.be/pd9GvbADJN4?si=vkOeHu_tdMkZ2-3y",
-      // thumbnail: "https://img.youtube.com/vi/pd9GvbADJN4/hqdefault.jpg",
-      thumbnail: "/images/weddings/16.webp"
+      url: "https://www.youtube.com/watch?v=eHx0k1jIdeo",
+      thumbnail: "/images/thumbnails/weddings/W_Thodoris+Maria_Samtorini.jpg"
     },
     {
       id: "wed-3",
-      title: "Thodoris & Maria - Santorini Clip",
-      provider: "youtube",
-      url: "https://youtu.be/eHx0k1jIdeo?si=X55abJuqYnT5pGg4",
-      // thumbnail: "https://img.youtube.com/vi/eHx0k1jIdeo/hqdefault.jpg",
-      thumbnail: "/images/weddings/32.webp"
-    },
-    {
-      id: "wed-4",
-      title: "Christina & Nikos",
-      provider: "youtube",
-      url: "https://youtu.be/ykZOGUaPPbI?si=WVJnCbaOUyn_vxs2",
-      // thumbnail: "https://img.youtube.com/vi/ykZOGUaPPbI/hqdefault.jpg",
-      thumbnail: "/images/weddings/40.webp"
-    },
-    {
-      id: "wed-5",
-      title: "Argyro & Vaggelis",
-      provider: "youtube",
-      url: "https://youtu.be/pKZm4mlBCSk?si=s8xpT_Y7XrFmvddS ",
-      // thumbnail: "https://img.youtube.com/vi/pKZm4mlBCSk/hqdefault.jpg",
-      thumbnail: "/images/weddings/8.webp"
-    },
-    {
-      id: "wed-6",
-      title: "Vasilis & Zoe",
-      provider: "youtube",
-      url: "https://youtu.be/k2x7ETkexxE?si=sA03ahnUunx_jE_4",
-      // thumbnail: "https://img.youtube.com/vi/k2x7ETkexxE/hqdefault.jpg",
-      thumbnail: "/images/weddings/47.webp"
-    },
-    {
-      id: "wed-7",
       title: "Marianna & Kostas",
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=r3jpzbzN9N8",
-      thumbnail: "/images/weddings/39.webp"
+      thumbnail: "/images/thumbnails/weddings/W_Marianna_Kostas.jpg"
     },
     {
-      id: "wed-8",
+      id: "wed-4",
       title: "Lefteris & Glykeria",
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=XkFyVM73HmU",
-      thumbnail: "/images/weddings/15.webp"
-    }
+      thumbnail: "/images/thumbnails/weddings/W_LefterisGlykeria.jpg"
+    },
+    {
+      id: "wed-5",
+      title: "Vasilis & Zoe",
+      provider: "youtube",
+      url: "https://www.youtube.com/watch?v=k2x7ETkexxE",
+      thumbnail: "/images/thumbnails/weddings/W_Vasilis_Zoe.jpg"
+    },
+    {
+      id: "wed-6",
+      title: "Sofie & Meletis",
+      provider: "youtube",
+      url: "https://www.youtube.com/watch?v=pd9GvbADJN4",
+      thumbnail: "/images/thumbnails/weddings/W_Sofie+Meletis.jpg"
+    },
+    {
+      id: "wed-7",
+      title: "Elia & Maurizio",
+      provider: "youtube",
+      url: "https://www.youtube.com/watch?v=RBJSHJeI0So",
+      thumbnail: "/images/thumbnails/weddings/W_EliaMaurizio.jpg"
+    },
   ],
 
   baptisms: [
     {
       id: "bap-1",
-      title: "Clelia",
-      provider: "youtube",
-      url: "https://youtu.be/Iiy02zum8nc?si=FevAe09zUHKlhKKT",
-      // thumbnail: "https://img.youtube.com/vi/Iiy02zum8nc/hqdefault.jpg",
-      thumbnail: "/images/baptisms/60.webp"
+      title: "Dimitris",
+      provider: "vimeo",
+      url: "https://vimeo.com/1149916409?fl=ip&fe=ec",
+      thumbnail: "/images/thumbnails/baptisms/V_Dimitris_180725.jpg"
     },
     {
       id: "bap-2",
-      title: "Nefeli",
-      provider: "youtube",
-      url: "https://youtu.be/TNsXG05x1eM?si=wb3ovG7UI0k8Gehi",
-      // thumbnail: "https://img.youtube.com/vi/TNsXG05x1eM/hqdefault.jpg",
-      thumbnail: "/images/baptisms/11.webp"
+      title: "Ioannis Marios",
+      provider: "vimeo",
+      url: "https://vimeo.com/1149924847?fl=ip&fe=ec",
+      thumbnail: "/images/thumbnails/baptisms/V_IoannisMarios.jpg"
     },
     {
       id: "bap-3",
-      title: "Yorgia - Paraskevi",
+      title: "Artemis",
       provider: "youtube",
-      url: "https://youtu.be/3WRtc23hd-A?si=d9RhwQGhcezD_Ih8",
-      // thumbnail: "https://img.youtube.com/vi/3WRtc23hd-A/hqdefault.jpg",
-      thumbnail: "/images/baptisms/56.webp"
+      url: "https://www.youtube.com/watch?v=TsrMhnxOMQQ",
+      thumbnail: "/images/thumbnails/baptisms/V_Artemis_210925.jpg"
     },
     {
       id: "bap-4",
-      title: "Dimitris - Orfeas",
+      title: "Irini",
       provider: "youtube",
-      url: "https://youtu.be/zphKThaox1A?si=whbIzdtG9jXaVe8O",
-      // thumbnail: "https://img.youtube.com/vi/zphKThaox1A/hqdefault.jpg",
-      thumbnail: "/images/baptisms/33.webp"
+      url: "https://www.youtube.com/watch?v=Mr6w60CRDY8",
+      thumbnail: "/images/thumbnails/baptisms/V_Irini.jpg"
     },
     {
       id: "bap-5",
+      title: "Goergia",
+      provider: "youtube",
+      url: "https://www.youtube.com/watch?v=3WRtc23hd-A",
+      thumbnail: "/images/thumbnails/baptisms/V_Georgia.jpg"
+    },
+    {
+      id: "bap-6",
       title: "Theologos",
       provider: "youtube",
-      url: "https://youtu.be/87mUlBWa9gU?si=ZARlSCJkI-4LVmaE",
-      // thumbnail: "https://img.youtube.com/vi/87mUlBWa9gU/hqdefault.jpg",
-      thumbnail: "/images/baptisms/45.webp"
+      url: "https://www.youtube.com/watch?v=87mUlBWa9gU",
+      thumbnail: "/images/thumbnails/baptisms/V_theologos.jpg"
     },
   ],
 
@@ -176,5 +165,22 @@ export const filmsByCategory = {
       url: "https://youtu.be/tebfSiAL4X0?si=gpkqr1PubiRg7HFD",
       thumbnail: "https://img.youtube.com/vi/tebfSiAL4X0/hqdefault.jpg",
     },
+  ],
+
+  advertisement: [
+    {
+      id: "adv-1",
+      title: "Dance School",
+      provider: "youtube",
+      url: "https://www.youtube.com/watch?v=HvvWdtTdUEY",
+      thumbnail: "/images/advertisement/39.jpg"
+    },
+    {
+      id: "adv-2",
+      title: "",
+      provider: "",
+      url: "https://pithos.okeanos.grnet.gr/public/Vtwz4VChMjSfQVj9IPjmZ5",
+      thumbnail: ""
+    }
   ]
 };

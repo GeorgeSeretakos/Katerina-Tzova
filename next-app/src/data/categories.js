@@ -12,7 +12,7 @@ export const categories = [
     title: "Baptisms",
     description:
       "Sacred first steps of life, captured with tenderness and reverence, so every smile and blessing endures.",
-    image: "/images/baptisms/33.jpg",
+    image: "/images/baptisms/41.jpg",
     href: "/stills/baptisms",
   },
   // {
@@ -28,7 +28,7 @@ export const categories = [
     title: "Films & Theatre",
     description:
       "The heartbeat of the stage, alive with passion and atmosphere — fleeting performances captured to live on.",
-    image: "/images/films-and-theatre/2.jpg",
+    image: "/images/films-and-theatre/34.jpg",
     href: "/stills/films-and-theatre",
   },
   {

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const categories = [
   { slug: "weddings",           label: "Weddings" },
   { slug: "baptisms",           label: "Baptisms" },
+  { slug: "portraits", label: "Portraits" },
   { slug: "films-and-theatre",  label: "Films & Theatre" },
   { slug: "advertisement",      label: "Advertisement" },
 ];
