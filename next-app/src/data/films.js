@@ -175,12 +175,12 @@ export const filmsByCategory = {
       url: "https://www.youtube.com/watch?v=HvvWdtTdUEY",
       thumbnail: "/images/advertisement/39.jpg"
     },
-    {
-      id: "adv-2",
-      title: "",
-      provider: "",
-      url: "https://pithos.okeanos.grnet.gr/public/Vtwz4VChMjSfQVj9IPjmZ5",
-      thumbnail: ""
-    }
+    // {
+    //   id: "adv-2",
+    //   title: "",
+    //   provider: "",
+    //   url: "https://pithos.okeanos.grnet.gr/public/Vtwz4VChMjSfQVj9IPjmZ5",
+    //   thumbnail: ""
+    // }
   ]
 };
