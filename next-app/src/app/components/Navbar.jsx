@@ -32,7 +32,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">        {/* Logo */}
         <Link href="/" className="relative h-10 w-48">
         <img
-            src="/logo/horizontal_white.png"
+            src="/logo/horizontal_white(1).png"
             alt="Katerina Tzova"
             className="object-contain w-full h-full"
           />
@@ -76,8 +76,6 @@ export default function Navbar() {
 }
 
 function NavItem({ href, label }) {
-  const pathname = usePathname();
-  const isActive = pathname === href;
 
   return (
     <Link

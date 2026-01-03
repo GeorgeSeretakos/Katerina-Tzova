@@ -12,23 +12,23 @@ export const categories = [
     title: "Baptisms",
     description:
       "Sacred first steps of life, captured with tenderness and reverence, so every smile and blessing endures.",
-    image: "/images/baptisms/41.jpg",
+    image: "/images/baptisms/33.jpg",
     href: "/stills/baptisms",
   },
-  // {
-  //   slug: "portraits",
-  //   title: "Portraits",
-  //   description:
-  //     "A quiet dialogue between presence and lens — portraits that reveal essence, character, and soul.",
-  //   image: "/images/portraits/32.jpg",
-  //   href: "/stills/portraits",
-  // },
+  {
+    slug: "portraits",
+    title: "Portraits",
+    description:
+      "A quiet dialogue between presence and lens — portraits that reveal essence, character, and soul.",
+    image: "/images/portraits/6.jpg",
+    href: "/stills/portraits",
+  },
   {
     slug: "films-and-theatre",
     title: "Films & Theatre",
     description:
       "The heartbeat of the stage, alive with passion and atmosphere — fleeting performances captured to live on.",
-    image: "/images/films-and-theatre/34.jpg",
+    image: "/images/films-and-theatre/11.jpg",
     href: "/stills/films-and-theatre",
   },
   {
@@ -36,17 +36,9 @@ export const categories = [
     title: "Advertisement",
     description:
       "Purposeful visuals designed to capture attention, convey messages, and drive engagement.",
-    image: "/images/advertisement/22.jpg",
+    image: "/images/advertisement/15.jpg",
     href: "/stills/advertisement",
   },
-  // {
-  //   slug: "dance-school",
-  //   title: "Dance School",
-  //   description:
-  //     "Grace in motion, energy in stillness — every leap and gesture preserved as poetry for the eye.",
-  //   image: "/images/dance-school/1.webp",
-  //   href: "/stills/dance-school",
-  // },
   {
     slug: "films",
     title: "Films",

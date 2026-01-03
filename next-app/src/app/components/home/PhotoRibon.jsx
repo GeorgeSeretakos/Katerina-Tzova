@@ -4,10 +4,10 @@ export default function PhotoRibbon() {
     { src: "/images/weddings/38.webp", alt: "Theatre scene" },
     { src: "/images/baptisms/68.webp", alt: "Reception sparkles" },
 
-    { src: "/images/films-and-theatre/40.jpg", alt: "Santorini" },
-    { src: "/images/portraits/40.jpg", alt: "Sunset vows" },
+    { src: "/images/films-and-theatre/8.jpg", alt: "Santorini" },
+    { src: "/images/portraits/8.jpg", alt: "Sunset vows" },
 
-    { src: "/images/dance-school/4.webp", alt: "City bridge silhouette" },
+    { src: "/images/advertisement/36.jpg", alt: "City bridge silhouette" },
     { src: "/images/weddings/42.webp", alt: "Wedding moment" },
     { src: "/images/baptisms/7.webp", alt: "Sunset vows" },
   ];

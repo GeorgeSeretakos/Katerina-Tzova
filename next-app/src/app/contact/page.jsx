@@ -6,7 +6,7 @@ export default function ContactPage() {
         <div className="flex items-center justify-center gap-4">
           <h1 className="font-great-vibes !font-normal">Contact</h1>
           <img
-            src="/icons/call-back.png" // reuse same icon for now
+            src="/icons/contact-us.png"
             alt="Delicate hand-drawn sketch"
             width={64}
             height={64}
@@ -23,16 +23,6 @@ export default function ContactPage() {
         <p className="text-sm md:text-base text-[#EAEAEA]/70 mb-6">
           Reach out and let’s create something timeless together
         </p>
-
-        {/*<div className="flex justify-center">*/}
-        {/*  <img*/}
-        {/*    src="/icons/call-back.png"*/}
-        {/*    alt="Contact Icon"*/}
-        {/*    width={64}*/}
-        {/*    height={64}*/}
-        {/*    className="opacity-90"*/}
-        {/*  />*/}
-        {/*</div>*/}
       </div>
     </section>
   );

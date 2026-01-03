@@ -12,12 +12,12 @@ export default function HomePage() {
         images={[
           "/images/weddings/40.webp",
           "/images/baptisms/60.webp",
-          "/images/portraits/34.jpg",
-          "/images/films-and-theatre/41.jpg",
+          "/images/portraits/13.jpg",
+          "/images/films-and-theatre/20.jpg",
           "/images/advertisement/27.jpg",
-          "/images/dance-school/7.webp",
+          "/images/advertisement/39.jpg",
         ]}
-        logoSrc="/logo/white.png"
+        logoSrc="/logo/white(1).png"
         autoPlay={true}
       />
       {/* Choose variant: "boxed" (yours) or "full" (mine with blur) */}
