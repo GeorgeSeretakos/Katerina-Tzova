@@ -7,16 +7,12 @@ export default function Footer() {
         {/* Left column: Logo + Info */}
         <div className="flex flex-col items-center justify-center text-center space-y-4">
           <img
-            src="/logo/white.png"
+            src="/logo/white(1).png"
             alt="Katerina Tzova"
             width={220}
             height={80}
             className="mb-4"
           />
-          {/*<p className="text-sm text-[#EAEAEA]/70 max-w-sm">*/}
-          {/*  Capturing stories with cinematic light and presence. Weddings,*/}
-          {/*  baptisms, portraits, films-and-theatre &amp; film.*/}
-          {/*</p>*/}
 
           {/* Phone */}
           <p>Tel:{" "}
@@ -54,15 +50,6 @@ export default function Footer() {
             >
               <img src="/icons/instagram.png" alt="Instagram" className="w-5 h-5"/>
             </a>
-            {/*<a*/}
-            {/*  href="https://vimeo.com/yourprofile"*/}
-            {/*  target="_blank"*/}
-            {/*  rel="noopener noreferrer"*/}
-            {/*  aria-label="Vimeo"*/}
-            {/*  className="hover:text-[#D4AF37] transition"*/}
-            {/*>*/}
-            {/*  <img src="/icons/vimeo.png" alt="Vimeo" className="w-5 h-5"/>*/}
-            {/*</a>*/}
           </div>
 
         </div>

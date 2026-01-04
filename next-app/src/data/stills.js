@@ -25,8 +25,8 @@ const toPretty = (slug) =>
 
 // --- Exported data map (keys MUST match route slugs) ---
 export const stillsByCategory = {
-  weddings:             makeItems("weddings", 51, "jpg"),
-  baptisms:             makeItems("baptisms", 59, "jpg"),
+  weddings:             makeItems("weddings", 49, "jpg"),
+  baptisms:             makeItems("baptisms", 55, "jpg"),
   portraits:            makeItems("portraits", 17, "jpg"),
   "films-and-theatre":  makeItems("films-and-theatre", 24, "jpg"),
   advertisement:        makeItems("advertisement", 31, "jpg"),

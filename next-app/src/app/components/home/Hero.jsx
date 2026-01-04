@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 
 export default function Hero({
 images = [],
-logoSrc = "",
+// logoSrc = "",
 autoPlay = true,
 intervalMs = 6500,
 }) {
@@ -78,15 +78,15 @@ intervalMs = 6500,
       </div>
 
       {/* Centered logo */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <img
-          src={logoSrc}
-          alt="Katerina Tzova"
-          width={260}
-          height={90}
-          className="w-[44vw] max-w-[260px] min-w-[160px] drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]"
-        />
-      </div>
+      {/*<div className="absolute inset-0 flex items-center justify-center">*/}
+      {/*  <img*/}
+      {/*    src={logoSrc}*/}
+      {/*    alt="Katerina Tzova"*/}
+      {/*    width={260}*/}
+      {/*    height={90}*/}
+      {/*    className="w-[44vw] max-w-[260px] min-w-[160px] drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]"*/}
+      {/*  />*/}
+      {/*</div>*/}
 
 
       {/* Nav arrows */}

@@ -29,10 +29,10 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">        {/* Logo */}
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <Link href="/" className="relative h-10 w-48">
         <img
-            src="/logo/horizontal_white(1).png"
+            src="/logo/horizontal_white(2).png"
             alt="Katerina Tzova"
             className="object-contain w-full h-full"
           />

@@ -12,7 +12,7 @@ export const categories = [
     title: "Baptisms",
     description:
       "Sacred first steps of life, captured with tenderness and reverence, so every smile and blessing endures.",
-    image: "/images/baptisms/33.jpg",
+    image: "/images/baptisms/1002.jpg",
     href: "/stills/baptisms",
   },
   {
@@ -20,7 +20,7 @@ export const categories = [
     title: "Portraits",
     description:
       "A quiet dialogue between presence and lens — portraits that reveal essence, character, and soul.",
-    image: "/images/portraits/6.jpg",
+    image: "/images/portraits/100.jpg",
     href: "/stills/portraits",
   },
   {
@@ -36,7 +36,7 @@ export const categories = [
     title: "Advertisement",
     description:
       "Purposeful visuals designed to capture attention, convey messages, and drive engagement.",
-    image: "/images/advertisement/15.jpg",
+    image: "/images/advertisement/12.jpg",
     href: "/stills/advertisement",
   },
   {
@@ -44,7 +44,7 @@ export const categories = [
     title: "Films",
     description:
       "Cinematic storytelling that lingers beyond the frame — films woven with atmosphere, feeling, and memory.",
-    image: "/images/baptisms/9.webp",
+    image: "/images/baptisms/11.jpg",
     href: "/films",
   },
 ];
