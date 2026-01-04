@@ -114,32 +114,35 @@ export const filmsByCategory = {
       title: "aPolis trailer",
       provider: "youtube",
       url: "https://youtu.be/lm8UB7nsh-I?si=MdYosDX-PxCiRrWo",
-      thumbnail: "https://img.youtube.com/vi/lm8UB7nsh-I/hqdefault.jpg",
-      // thumbnail: "/images/movies/37.jpg"
+      thumbnail: "/images/thumbnails/movies/apolis.jpg",
     },
     {
       id: "mov-2",
       title: "I remember everything - trailer",
       provider: "youtube",
       url: "https://youtu.be/vioWBhg3C3U?si=C9nv3zytTNiuaFie",
-      thumbnail: "https://img.youtube.com/vi/vioWBhg3C3U/hqdefault.jpg",
-      // thumbnail: "/images/movies/37.jpg"
+      thumbnail: "/images/thumbnails/movies/thimamai.jpg",
     },
     {
       id: "mov-3",
       title: "Ηχοτοπία της Ελλάδας - trailer",
       provider: "youtube",
       url: "https://youtu.be/BQXgd-CSZF8?si=WMXErBHM0j6JSPTV",
-      thumbnail: "https://img.youtube.com/vi/BQXgd-CSZF8/hqdefault.jpg",
-      // thumbnail: "/images/movies/37.jpg"
+      thumbnail: "/images/thumbnails/movies/ixotopia.jpg",
     },
     {
       id: "mov-4",
       title: "Ημερολόγια Εγκλεισμού - trailer",
       provider: "youtube",
       url: "https://youtu.be/zyo-dB_scM8?si=zm2p5s0NmDMgacqh",
-      thumbnail: "https://img.youtube.com/vi/zyo-dB_scM8/hqdefault.jpg",
-      // thumbnail: "/images/movies/37.jpg"
+      thumbnail: "/images/thumbnails/movies/imerologia.jpg",
+    },
+    {
+      id: "mov-5",
+      title: "01 NANOS VALAORITIS & MARIE WILSON TRAILER",
+      provider: "youtube",
+      url: "https://www.youtube.com/watch?v=ibdx3x0ozds",
+      thumbnail: "/images/thumbnails/movies/01.jpg",
     },
   ],
 
@@ -149,38 +152,73 @@ export const filmsByCategory = {
       title: "Το βλέμμα του ψαριού - trailer",
       provider: "youtube",
       url: "https://youtu.be/mD7OJIzJtkU?si=i6rfxsYR7eQ4FX3V",
-      thumbnail: "https://img.youtube.com/vi/mD7OJIzJtkU/hqdefault.jpg",
+      thumbnail: "/images/thumbnails//theatre/psari.jpg",
     },
     {
       id: "the-2",
       title: "Άκου Ανθρωπάκο",
       provider: "youtube",
       url: "https://youtu.be/RsKpYrNs1zY?si=7YJhMo45mYHLn_mU",
-      thumbnail: "https://img.youtube.com/vi/RsKpYrNs1zY/hqdefault.jpg",
+      thumbnail: "/images/thumbnails//theatre/akou.jpg",
     },
     {
       id: "the-3",
       title: "Λευκό Ρόδο",
       provider: "youtube",
       url: "https://youtu.be/tebfSiAL4X0?si=gpkqr1PubiRg7HFD",
-      thumbnail: "https://img.youtube.com/vi/tebfSiAL4X0/hqdefault.jpg",
+      thumbnail: "/images/thumbnails//theatre/lefko_rodo.jpg",
     },
   ],
 
   advertisement: [
     {
       id: "adv-1",
-      title: "Dance School",
+      title: "Motivo Dance School",
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=HvvWdtTdUEY",
-      thumbnail: "/images/advertisement/39.jpg"
+      thumbnail: "/images/thumbnails/advertisement/dance_school.jpg"
     },
-    // {
-    //   id: "adv-2",
-    //   title: "",
-    //   provider: "",
-    //   url: "https://pithos.okeanos.grnet.gr/public/Vtwz4VChMjSfQVj9IPjmZ5",
-    //   thumbnail: ""
-    // }
+    {
+      id: "adv-2",
+      title: "DMC LEXI, International Symposium",
+      provider: "youtube",
+      url: "https://www.youtube.com/watch?v=7ID-z8NfiNw",
+      thumbnail: "/images/thumbnails/films/DMC.jpg"
+    },
+    {
+      id: "adv-3",
+      title: "Svetlana Marozaite jewellery (rings)",
+      provider: "youtube",
+      url: "https://www.youtube.com/shorts/zqyv6uzsKz8",
+      thumbnail: "/images/thumbnails/advertisement/rings.png"
+    },
+    {
+      id: "adv-4",
+      title: "Svetlana Marozaite jewellery (necklaces)",
+      provider: "youtube",
+      url: "https://www.youtube.com/shorts/GDRN00yNfLU",
+      thumbnail: "/images/thumbnails/advertisement/necklaces.png"
+    },
+    {
+      id: "adv-5",
+      title: "Svetlana Marozaite jewellery (earings)",
+      provider: "youtube",
+      url: "https://www.youtube.com/shorts/a5Pb_t440dI",
+      thumbnail: "/images/thumbnails/advertisement/earings.png"
+    },
+    {
+      id: "adv-6",
+      title: "Svetlana Marozaite jewellery (bracelets)",
+      provider: "youtube",
+      url: "https://www.youtube.com/shorts/6KX9KakwinM",
+      thumbnail: "/images/thumbnails/advertisement/bracelets.png"
+    },
+    {
+      id: "adv-7",
+      title: "IRC 30YEARS ENGLISH",
+      provider: "youtube",
+      url: "https://www.youtube.com/watch?v=_fj839Iz9L4",
+      thumbnail: "/images/thumbnails/advertisement/irc.png"
+    }
   ]
 };
