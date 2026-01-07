@@ -27,7 +27,7 @@ const toPretty = (slug) =>
 export const stillsByCategory = {
   weddings:             makeItems("weddings", 49, "jpg"),
   baptisms:             makeItems("baptisms", 55, "jpg"),
-  portraits:            makeItems("portraits", 17, "jpg"),
+  portraits:            makeItems("portraits", 16, "jpg"),
   "films-and-theatre":  makeItems("films-and-theatre", 24, "jpg"),
   advertisement:        makeItems("advertisement", 31, "jpg"),
 };

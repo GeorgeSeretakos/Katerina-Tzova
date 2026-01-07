@@ -20,7 +20,7 @@ export const categories = [
     title: "Portraits",
     description:
       "A quiet dialogue between presence and lens — portraits that reveal essence, character, and soul.",
-    image: "/images/portraits/100.jpg",
+    image: "/images/portraits/5.jpg",
     href: "/stills/portraits",
   },
   {

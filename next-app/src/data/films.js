@@ -52,7 +52,7 @@ export const filmsByCategory = {
       title: "Sofie & Meletis",
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=pd9GvbADJN4",
-      thumbnail: "/images/thumbnails/weddings/W_Sofie+Meletis.jpg"
+      thumbnail: "/images/thumbnails/weddings/W_Sofie+Meletis.png"
     },
     {
       id: "wed-7",
@@ -94,7 +94,7 @@ export const filmsByCategory = {
     },
     {
       id: "bap-5",
-      title: "Goergia",
+      title: "Georgia",
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=3WRtc23hd-A",
       thumbnail: "/images/thumbnails/baptisms/V_Georgia.jpg"
