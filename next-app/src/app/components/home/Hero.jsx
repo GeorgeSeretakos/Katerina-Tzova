@@ -51,7 +51,7 @@ intervalMs = 6500,
 
   return (
     <section
-      className="relative min-h-[80vh] md:min-h-[100vh] overflow-hidden bg-black"
+      className="relative min-h-[60vh] md:min-h-[100vh] overflow-hidden bg-black"
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
       aria-label="Featured gallery"
