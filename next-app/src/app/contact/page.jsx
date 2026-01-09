@@ -1,21 +1,16 @@
+"use client";
+
+import AnimatedPageHeader from "../components/AnimatedPageHeader";
+
 export default function ContactPage() {
   return (
     <section className="bg-[#0B0B0C] text-[#EAEAEA] mb-12">
-      {/* Title block, same style as Stills */}
-      <div className="py-10">
-        <div className="flex items-center justify-center gap-4">
-          <h1 className="font-great-vibes !font-normal">Contact</h1>
-          <img
-            src="/icons/contact-us.png"
-            alt="Delicate hand-drawn sketch"
-            width={64}
-            height={64}
-            className="opacity-80"
-          />
-        </div>
-      </div>
+      <AnimatedPageHeader
+        title="Contact"
+        iconSrc="/icons/contact-us.png"
+        iconAlt="Delicate hand-drawn sketch"
+      />
 
-      {/* Subtitle + icon */}
       <div className="max-w-3xl mx-auto px-4 text-center">
         <h1 className="font-great-vibes !font-normal mb-6">
           I’d love to hear about your story

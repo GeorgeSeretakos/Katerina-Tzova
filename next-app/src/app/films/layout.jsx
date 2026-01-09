@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import AnimatedPageHeader from "../components/AnimatedPageHeader";
 
 const categories = [
-  { slug: "weddings",  label: "Weddings" },
-  { slug: "baptisms",  label: "Baptisms" },
-  { slug: "movies",   label: "Movies" },
+  { slug: "weddings", label: "Weddings" },
+  { slug: "baptisms", label: "Baptisms" },
+  { slug: "movies", label: "Movies" },
   { slug: "theatre", label: "Theatre" },
-  { slug: "advertisement", label: "Advertisement" }
+  { slug: "advertisement", label: "Advertisement" },
 ];
 
 export default function FilmsLayout({ children }) {
@@ -17,18 +18,11 @@ export default function FilmsLayout({ children }) {
 
   return (
     <section className="min-h-screen bg-[#0B0B0C] text-[#EAEAEA]">
-      <div className="py-10">
-        <div className="flex items-center justify-center gap-4">
-          <h1 className="font-great-vibes !font-normal">Films</h1>
-          <img
-            src="/icons/films.png"
-            alt="Delicate hand-drawn sketch"
-            width={64}
-            height={64}
-            className="opacity-80"
-          />
-        </div>
-      </div>
+      <AnimatedPageHeader
+        title="Films"
+        iconSrc="/icons/films.png"
+        iconAlt="Delicate hand-drawn sketch"
+      />
 
       <div className="sticky top-0 z-20 bg-[#0B0B0C]/95 backdrop-blur border-t border-b border-[#C6A664]/30">
         <nav className="flex justify-center gap-4 md:gap-6 py-3 text-sm">

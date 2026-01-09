@@ -4,7 +4,7 @@ export const categories = [
     title: "Weddings",
     description:
       "Love stories told through light and motion — moments of joy, intimacy, and celebration preserved forever.",
-    image: "/images/weddings/47.jpg",
+    image: "/images/weddings/1000.jpg",
     href: "/stills/weddings",
   },
   {
@@ -44,7 +44,7 @@ export const categories = [
     title: "Films",
     description:
       "Cinematic storytelling that lingers beyond the frame — films woven with atmosphere, feeling, and memory.",
-    image: "/images/baptisms/11.jpg",
+    image: "/images/thumbnails/weddings/W_LefterisGlykeria.jpg",
     href: "/films",
   },
 ];

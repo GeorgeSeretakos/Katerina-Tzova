@@ -7,6 +7,7 @@ import {
   Scissors,
   GraduationCap,
 } from "lucide-react";
+import AnimatedPageHeader from "../components/AnimatedPageHeader";
 
 export default function AboutPage() {
   const [open, setOpen] = useState(false);
@@ -14,18 +15,11 @@ export default function AboutPage() {
   return (
     <section className="min-h-screen bg-[#0B0B0C] text-[#EAEAEA]">
       {/* Title + Icon */}
-      <div className="py-10">
-        <div className="flex items-center justify-center gap-4">
-          <h1 className="font-great-vibes !font-normal">About</h1>
-          <img
-            src="/icons/about.png"
-            alt="Delicate hand-drawn sketch"
-            width={64}
-            height={64}
-            className="opacity-80"
-          />
-        </div>
-      </div>
+      <AnimatedPageHeader
+        title="About"
+        iconSrc="/icons/about.png"
+        iconAlt="Delicate hand-drawn sketch"
+      />
 
       {/* Content */}
       <div className="max-w-7xl mx-auto px-4 pb-24">
@@ -185,7 +179,7 @@ export default function AboutPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: "APOLIS",
+                title: "aPolis",
                 desc:
                   "Debut documentary rooted in Constantinopolitan family histories.",
               },
