@@ -71,10 +71,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     // const locale = cookieStore.getAll()
     //     .find((c) => c.name === "locale")?.value ?? "el";
 
-    const locale="el";
-
     return (
-        <html lang={locale}>
+        <html>
         <body
             className={`
           ${manrope.variable}
@@ -87,7 +85,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           antialiased
         `}
         >
-        <LocaleProvider locale={locale}>
+        <LocaleProvider>
             <Navbar />
             <main>{children}</main>
             <PhotoRibbon />

@@ -5,7 +5,7 @@ import { createContext, useContext, useState } from "react";
 const LocaleContext = createContext(null);
 
 export function LocaleProvider({ children }) {
-  const [locale, setLocale] = useState("el"); // default
+  const [locale, setLocale] = useState("en"); // default
 
   return (
     <LocaleContext.Provider value={{ locale, setLocale }}>
