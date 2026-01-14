@@ -1,22 +1,42 @@
+// stills/[category]/page.jsx
 import StillsGrid from "../../components/galleries/StillsGrid";
 import { stillsByCategory } from "../../../data/stills";
 import CategoryNotFound from "../../components/CategoryNotFound";
 
 export function generateStaticParams() {
-  return Object.keys(stillsByCategory).map((category) => ({
-    category,
-  }));
+  try {
+    if (!stillsByCategory || typeof stillsByCategory !== 'object') {
+      return [];
+    }
+
+    const categories = Object.keys(stillsByCategory);
+    return categories.map((category) => ({
+      category,
+    }));
+  } catch (error) {
+    return [];
+  }
 }
 
 export default async function StillsCategoryPage({ params }) {
-  const { category } = await params;
-  const items = stillsByCategory[category];
+  try {
+    const { category } = await params;
 
-  if (!items) return <CategoryNotFound />;
+    if (!stillsByCategory || !category) {
+      return <CategoryNotFound />;
+    }
 
-  return (
-    <div className="space-y-6">
-      <StillsGrid items={items} />
-    </div>
-  );
+    const items = stillsByCategory[category];
+
+    if (!items) return <CategoryNotFound />;
+
+    return (
+      <div className="space-y-6">
+        <StillsGrid items={items} />
+      </div>
+    );
+
+  } catch (error) {
+    return <CategoryNotFound />;
+  }
 }

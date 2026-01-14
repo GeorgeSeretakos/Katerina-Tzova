@@ -1,22 +1,41 @@
+// films/[category]/page.jsx
 import FilmsGrid from "../../components/galleries/FilmsGrid";
 import { filmsByCategory } from "../../../data/films";
 import CategoryNotFound from "../../components/CategoryNotFound";
 
 export function generateStaticParams() {
-  return Object.keys(filmsByCategory).map((category) => ({
-    category,
-  }));
+  try {
+    if (!filmsByCategory || typeof filmsByCategory !== 'object') {
+      return [];
+    }
+
+    const categories = Object.keys(filmsByCategory);
+    return categories.map((category) => ({
+      category,
+    }));
+  } catch (error) {
+    return [];
+  }
 }
 
 export default async function FilmsCategoryPage({ params }) {
-  const { category } = await params;
-  const items = filmsByCategory[category];
+  try {
+    const { category } = await params;
 
-  if (!items) return <CategoryNotFound />;
+    if (!filmsByCategory || !category) {
+      return <CategoryNotFound />;
+    }
 
-  return (
-    <div className="space-y-6">
-      <FilmsGrid items={items} />
-    </div>
-  );
+    const items = filmsByCategory[category];
+
+    if (!items) return <CategoryNotFound />;
+
+    return (
+      <div className="space-y-6">
+        <FilmsGrid items={items} />
+      </div>
+    );
+  } catch (error) {
+    return <CategoryNotFound />;
+  }
 }
