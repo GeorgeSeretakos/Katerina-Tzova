@@ -139,7 +139,6 @@ export default function Footer() {
         <form
           name="contact"
           method="POST"
-          data-netlify="true"
           data-netlify-honeypot="bot-field"
           className="space-y-4"
         >
