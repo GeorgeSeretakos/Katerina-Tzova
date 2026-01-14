@@ -11,7 +11,7 @@ export function generateStaticParams() {
 }
 
 export default async function StillsCategoryPage({ params }) {
-  const { category } = await params;
+  const { category } = params;
   const items = stillsByCategory[category];
 
   if (!items) return <CategoryNotFound />;

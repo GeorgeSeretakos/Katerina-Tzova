@@ -11,7 +11,7 @@ export function generateStaticParams() {
 }
 
 export default async function FilmsCategoryPage({ params }) {
-  const { category } = await params;
+  const { category } = params;
   const items = filmsByCategory[category];
 
   if (!items) return <CategoryNotFound />;
