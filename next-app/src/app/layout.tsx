@@ -12,7 +12,6 @@ import "./styles/globals.css";
 import Navbar from "./components/Navbar";
 import PhotoRibbon from "@/app/components/home/PhotoRibon";
 import Footer from "@/app/components/Footer";
-import { cookies } from "next/headers";
 import { LocaleProvider } from "../../lib/locale";
 
 /* ---------------- Fonts ---------------- */
@@ -67,10 +66,12 @@ export const metadata = {
 /* ---------------- Layout ---------------- */
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-    const cookieStore = await cookies();
+    // const cookieStore = await cookies();
+    //
+    // const locale = cookieStore.getAll()
+    //     .find((c) => c.name === "locale")?.value ?? "el";
 
-    const locale = cookieStore.getAll()
-        .find((c) => c.name === "locale")?.value ?? "el";
+    const locale="el";
 
     return (
         <html lang={locale}>

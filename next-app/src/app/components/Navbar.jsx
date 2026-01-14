@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { usePathname, useRouter } from "next/navigation";
-import { useLocale } from "../../../lib/locale";
+import { usePathname } from "next/navigation";
+import { useLocale, useSetLocale } from "../../../lib/locale";
 
 const M = {
   en: {
@@ -30,25 +30,28 @@ const M = {
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
   const pathname = usePathname();
-  const router = useRouter();
   const locale = useLocale();
+  const setLocale = useSetLocale();
+
   const T = M[locale];
 
+  /* Scroll background */
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close mobile menu on route change
+  /* Close mobile menu on route change */
   useEffect(() => {
     setMobileOpen(false);
   }, [pathname]);
 
-  function setLocale(next) {
-    document.cookie = `locale=${next}; Path=/; Max-Age=${60 * 60 * 24 * 365}; SameSite=Lax`;
-    router.refresh();
+  function handleSetLocale(nextLocale) {
+    if (nextLocale === locale) return;
+    setLocale(nextLocale); // CONTEXT ONLY — no cookies, no refresh
   }
 
   return (
@@ -69,7 +72,7 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Desktop links */}
+        {/* Desktop navigation */}
         <div className="hidden md:flex items-center gap-4 text-[#EAEAEA]">
           <NavItem href="/" label={T.home} />
           <NavItem href="/stills" label={T.stills} />
@@ -77,13 +80,12 @@ export default function Navbar() {
           <NavItem href="/about" label={T.about} />
           <NavItem href="/contact" label={T.contact} />
 
-          {/* Language toggle */}
-          <LangToggle locale={locale} onSelect={setLocale} />
+          <LangToggle locale={locale} onSelect={handleSetLocale} />
         </div>
 
         {/* Mobile controls */}
         <div className="md:hidden flex items-center gap-4">
-          <LangToggle locale={locale} onSelect={setLocale} compact />
+          <LangToggle locale={locale} onSelect={handleSetLocale} compact />
 
           <button
             onClick={() => setMobileOpen((v) => !v)}
@@ -96,7 +98,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile links */}
+      {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden bg-[#0B0B0C] shadow-md">
           <div className="flex flex-col space-y-3 px-6 py-4 font-medium text-[#EAEAEA]">
@@ -112,6 +114,8 @@ export default function Navbar() {
   );
 }
 
+/* ---------------- Subcomponents ---------------- */
+
 function NavItem({ href, label }) {
   return (
     <Link
@@ -123,7 +127,7 @@ function NavItem({ href, label }) {
   );
 }
 
-/* EL | EN toggle */
+/* Language toggle (EL | EN) */
 function LangToggle({ locale, onSelect, compact = false }) {
   const base = "px-0.5 focus:outline-none";
   const active = "font-semibold text-[#EAEAEA]";
@@ -131,7 +135,11 @@ function LangToggle({ locale, onSelect, compact = false }) {
   const size = compact ? "text-xs" : "text-xs md:text-sm";
 
   return (
-    <div className={`flex items-center ${size}`} role="group" aria-label="Language">
+    <div
+      className={`flex items-center ${size}`}
+      role="group"
+      aria-label="Language"
+    >
       <button
         type="button"
         onClick={() => onSelect("el")}
@@ -142,7 +150,9 @@ function LangToggle({ locale, onSelect, compact = false }) {
       >
         EL
       </button>
+
       <span className="mx-1 text-[#EAEAEA]/30 select-none">|</span>
+
       <button
         type="button"
         onClick={() => onSelect("en")}

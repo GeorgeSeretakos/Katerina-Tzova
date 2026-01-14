@@ -1,7 +1,33 @@
 "use client";
-import {createContext, useContext} from "react";
-const LocaleCtx = createContext("el");
-export function LocaleProvider({locale, children}) {
-  return <LocaleCtx.Provider value={locale}>{children}</LocaleCtx.Provider>;
+
+import { createContext, useContext, useState } from "react";
+
+const LocaleContext = createContext(null);
+
+export function LocaleProvider({ children }) {
+  const [locale, setLocale] = useState("el"); // default
+
+  return (
+    <LocaleContext.Provider value={{ locale, setLocale }}>
+      {children}
+    </LocaleContext.Provider>
+  );
 }
-export function useLocale() { return useContext(LocaleCtx); }
+
+/* Read-only hook */
+export function useLocale() {
+  const ctx = useContext(LocaleContext);
+  if (!ctx) {
+    throw new Error("useLocale must be used within LocaleProvider");
+  }
+  return ctx.locale;
+}
+
+/* Setter hook */
+export function useSetLocale() {
+  const ctx = useContext(LocaleContext);
+  if (!ctx) {
+    throw new Error("useSetLocale must be used within LocaleProvider");
+  }
+  return ctx.setLocale;
+}
