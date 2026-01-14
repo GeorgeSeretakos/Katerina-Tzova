@@ -1,5 +1,8 @@
 "use client";
 
+export const dynamicParams = true;
+export const dynamic = 'force-dynamic'; // Ensure dynamic rendering
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import AnimatedPageHeader from "../components/AnimatedPageHeader";

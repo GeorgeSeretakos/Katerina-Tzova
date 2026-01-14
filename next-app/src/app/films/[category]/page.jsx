@@ -1,22 +1,8 @@
-// films/[category]/page.jsx
 import FilmsGrid from "../../components/galleries/FilmsGrid";
 import { filmsByCategory } from "../../../data/films";
 import CategoryNotFound from "../../components/CategoryNotFound";
 
-export function generateStaticParams() {
-  try {
-    if (!filmsByCategory || typeof filmsByCategory !== 'object') {
-      return [];
-    }
-
-    const categories = Object.keys(filmsByCategory);
-    return categories.map((category) => ({
-      category,
-    }));
-  } catch (error) {
-    return [];
-  }
-}
+// REMOVED: generateStaticParams()
 
 export default async function FilmsCategoryPage({ params }) {
   try {
@@ -35,7 +21,10 @@ export default async function FilmsCategoryPage({ params }) {
         <FilmsGrid items={items} />
       </div>
     );
+
   } catch (error) {
     return <CategoryNotFound />;
   }
 }
+
+export const dynamicParams = true;

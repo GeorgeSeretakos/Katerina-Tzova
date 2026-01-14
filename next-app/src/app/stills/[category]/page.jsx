@@ -1,22 +1,8 @@
-// stills/[category]/page.jsx
 import StillsGrid from "../../components/galleries/StillsGrid";
 import { stillsByCategory } from "../../../data/stills";
 import CategoryNotFound from "../../components/CategoryNotFound";
 
-export function generateStaticParams() {
-  try {
-    if (!stillsByCategory || typeof stillsByCategory !== 'object') {
-      return [];
-    }
-
-    const categories = Object.keys(stillsByCategory);
-    return categories.map((category) => ({
-      category,
-    }));
-  } catch (error) {
-    return [];
-  }
-}
+// REMOVED: generateStaticParams()
 
 export default async function StillsCategoryPage({ params }) {
   try {
@@ -40,3 +26,6 @@ export default async function StillsCategoryPage({ params }) {
     return <CategoryNotFound />;
   }
 }
+
+// Add this to handle dynamic params
+export const dynamicParams = true;
