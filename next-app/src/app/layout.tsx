@@ -120,7 +120,6 @@ export default async function RootLayout({
                 <option>Other Event</option>
             </select>
             <textarea name="message"/>
-            <input type="checkbox" name="consent"/>
             <input type="text" name="bot-field"/>
         </form>
         </body>
