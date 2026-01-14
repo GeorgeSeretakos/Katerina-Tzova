@@ -3,9 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLocale } from "../../../../lib/locale";
+import {categories} from "../../../data/categories";
 
-export default function CategoryShowcase({ categories = [] }) {
+export default function CategoryShowcase() {
   const locale = useLocale();
+
+  const localizedCategories = categories[locale];
 
   const M = {
     en: {
@@ -20,7 +23,7 @@ export default function CategoryShowcase({ categories = [] }) {
 
   return (
     <div className="flex flex-col">
-      {categories.map((cat, i) => (
+      {localizedCategories.map((cat, i) => (
         <div
           key={cat.slug}
           className="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[400px]"

@@ -3,13 +3,9 @@
 import Hero from "../app/components/home/Hero";
 import DualEntry from "../app/components/home/DualEntry";
 import CategoryShowcase from "./components/home/CategoryShowCase";
-import { categories } from "../data/categories";
 import MiniBio from "../app/components/home/MiniBio";
-import { useLocale } from "../../lib/locale";
 
 export default function HomePage() {
-  const locale = useLocale();
-  const localizedCategories = categories[locale];
 
   return (
     <main className="bg-[#0B0B0C] text-[#EAEAEA]">
@@ -27,7 +23,6 @@ export default function HomePage() {
         autoPlay={true}
       />
 
-      {/* Choose variant: "boxed" (yours) or "full" (mine with blur) */}
       <section className="max-w-6xl mx-auto px-4 py-14">
         <DualEntry
           variant="boxed"
@@ -40,7 +35,7 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto">
-        <CategoryShowcase categories={localizedCategories} />
+        <CategoryShowcase />
       </section>
 
       <section className="max-w-3xl mx-auto px-4 py-16">
