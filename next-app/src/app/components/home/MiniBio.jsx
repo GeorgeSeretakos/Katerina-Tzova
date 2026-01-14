@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useLocale } from "../../../../lib/locale";
 
 export default function MiniBio() {

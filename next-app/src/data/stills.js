@@ -30,4 +30,4 @@ export const stillsByCategory = {
   portraits:            makeItems("portraits", 16, "jpg"),
   "films-and-theatre":  makeItems("films-and-theatre", 24, "jpg"),
   advertisement:        makeItems("advertisement", 32, "jpg"),
-};
+} || {};
