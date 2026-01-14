@@ -4,21 +4,8 @@ import {
     Manrope,
     Open_Sans,
     Roboto,
-    Imperial_Script,
-    Fleur_De_Leah,
-    League_Script,
-    Birthstone,
-    Corinthia,
-    Dynalight,
-    Bonheur_Royale,
-    Dancing_Script,
-    Ephesis,
-    Allura,
-    Parisienne,
-    Tangerine,
     Great_Vibes,
-    Noto_Serif,
-    STIX_Two_Text, Zen_Old_Mincho, Zen_Kurenaido,
+    Zen_Kurenaido,
 } from "next/font/google";
 
 import "./styles/globals.css";
@@ -118,11 +105,11 @@ export default async function RootLayout({
             data-netlify-honeypot="bot-field"
             hidden
         >
-            <input type="hidden" name="form-name" value="contact" />
-            <input type="text" name="firstName" />
-            <input type="text" name="lastName" />
-            <input type="email" name="email" />
-            <input type="tel" name="phone" />
+            <input type="hidden" name="form-name" value="contact"/>
+            <input type="text" name="firstName"/>
+            <input type="text" name="lastName"/>
+            <input type="email" name="email"/>
+            <input type="tel" name="phone"/>
             <select name="eventType">
                 <option>Wedding</option>
                 <option>Baptism</option>
@@ -132,8 +119,9 @@ export default async function RootLayout({
                 <option>Dance School</option>
                 <option>Other Event</option>
             </select>
-            <textarea name="message" />
-            <input type="text" name="bot-field" />
+            <textarea name="message"/>
+            <input type="checkbox" name="consent"/>
+            <input type="text" name="bot-field"/>
         </form>
         </body>
         </html>
