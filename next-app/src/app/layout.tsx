@@ -98,31 +98,31 @@ export default async function RootLayout({
         </LocaleProvider>
 
         {/* Netlify contact form */}
-        {/*<form*/}
-        {/*    name="contact"*/}
-        {/*    method="POST"*/}
-        {/*    data-netlify="true"*/}
-        {/*    data-netlify-honeypot="bot-field"*/}
-        {/*    hidden*/}
-        {/*>*/}
-        {/*    <input type="hidden" name="form-name" value="contact"/>*/}
-        {/*    <input type="text" name="firstName"/>*/}
-        {/*    <input type="text" name="lastName"/>*/}
-        {/*    <input type="email" name="email"/>*/}
-        {/*    <input type="tel" name="phone"/>*/}
-        {/*    <select name="eventType">*/}
-        {/*        <option>Wedding</option>*/}
-        {/*        <option>Baptism</option>*/}
-        {/*        <option>Portrait</option>*/}
-        {/*        <option>Theatre</option>*/}
-        {/*        <option>Movie</option>*/}
-        {/*        <option>Dance School</option>*/}
-        {/*        <option>Other Event</option>*/}
-        {/*    </select>*/}
-        {/*    <textarea name="message"/>*/}
-        {/*    <input type="checkbox" name="consent"/>*/}
-        {/*    <input type="text" name="bot-field"/>*/}
-        {/*</form>*/}
+        <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            hidden
+        >
+            <input type="hidden" name="form-name" value="contact"/>
+            <input type="text" name="firstName"/>
+            <input type="text" name="lastName"/>
+            <input type="email" name="email"/>
+            <input type="tel" name="phone"/>
+            <select name="eventType">
+                <option>Wedding</option>
+                <option>Baptism</option>
+                <option>Portrait</option>
+                <option>Theatre</option>
+                <option>Movie</option>
+                <option>Dance School</option>
+                <option>Other Event</option>
+            </select>
+            <textarea name="message"/>
+            <input type="checkbox" name="consent"/>
+            <input type="text" name="bot-field"/>
+        </form>
         </body>
         </html>
     );

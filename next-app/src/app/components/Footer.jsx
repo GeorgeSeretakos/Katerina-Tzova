@@ -139,11 +139,12 @@ export default function Footer() {
         <form
           name="contact"
           method="POST"
-          data-netlify-honeypot="bot-field"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/thank-you"
           className="space-y-4"
         >
           <input type="hidden" name="form-name" value="contact" />
-
           <p hidden>
             <label>
               {T.form.honeypot} <input name="bot-field" />
@@ -152,6 +153,7 @@ export default function Footer() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
+              id="firstName"
               type="text"
               name="firstName"
               placeholder={T.form.firstName}
@@ -159,6 +161,7 @@ export default function Footer() {
               className="w-full rounded-md bg-[#121214] border border-[#C6A664]/30 px-3 py-2 text-sm focus:border-[#D4AF37] focus:outline-none"
             />
             <input
+              id="lastName"
               type="text"
               name="lastName"
               placeholder={T.form.lastName}
@@ -169,6 +172,7 @@ export default function Footer() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
+              id="email"
               type="email"
               name="email"
               placeholder={T.form.email}
@@ -176,6 +180,7 @@ export default function Footer() {
               className="w-full rounded-md bg-[#121214] border border-[#C6A664]/30 px-3 py-2 text-sm focus:border-[#D4AF37] focus:outline-none"
             />
             <input
+              id="phone"
               type="tel"
               name="phone"
               placeholder={T.form.phone}
@@ -184,6 +189,7 @@ export default function Footer() {
           </div>
 
           <select
+            id="eventType"
             name="eventType"
             required
             className="w-full rounded-md bg-[#121214] border border-[#C6A664]/30 px-3 py-2 text-sm focus:border-[#D4AF37] focus:outline-none"
@@ -195,6 +201,7 @@ export default function Footer() {
           </select>
 
           <textarea
+            id="message"
             name="message"
             placeholder={T.form.message}
             rows={4}
