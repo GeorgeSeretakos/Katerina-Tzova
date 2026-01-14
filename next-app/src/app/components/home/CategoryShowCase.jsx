@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLocale } from "../../../../lib/locale";
-import {categories} from "../../../data/categories";
+import {categories} from "../../../../public/data/categories";
 
 export default function CategoryShowcase() {
   const locale = useLocale();

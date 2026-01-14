@@ -1,5 +1,5 @@
 import StillsGrid from "../../components/galleries/StillsGrid";
-import { stillsByCategory } from "../../../data/stills";
+import { stillsByCategory } from "../../../../public/data/stills";
 import CategoryNotFound from "../../components/CategoryNotFound";
 
 // REMOVED: generateStaticParams()

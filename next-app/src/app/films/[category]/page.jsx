@@ -1,5 +1,5 @@
 import FilmsGrid from "../../components/galleries/FilmsGrid";
-import { filmsByCategory } from "../../../data/films";
+import { filmsByCategory } from "../../../../public/data/films";
 import CategoryNotFound from "../../components/CategoryNotFound";
 
 // REMOVED: generateStaticParams()
