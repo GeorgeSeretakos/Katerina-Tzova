@@ -1,7 +1,6 @@
 import StillsGrid from "../../components/galleries/StillsGrid";
 import { stillsByCategory } from "../../../data/stills";
-
-export const dynamic = "force-static";
+import CategoryNotFound from "../../components/CategoryNotFound";
 
 export function generateStaticParams() {
   return Object.keys(stillsByCategory).map((category) => ({
@@ -13,13 +12,7 @@ export default async function StillsCategoryPage({ params }) {
   const { category } = await params;
   const items = stillsByCategory[category];
 
-  if (!items) {
-    return (
-      <div className="text-center text-[#EAEAEA]/70">
-        Category not found
-      </div>
-    );
-  }
+  if (!items) return <CategoryNotFound />;
 
   return (
     <div className="space-y-6">

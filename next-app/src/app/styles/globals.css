@@ -13,9 +13,17 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Default (English & Latin) */
 .font-great-vibes {
   font-family: var(--font-great-vibes);
 }
+
+/* Greek override */
+html[lang="el"] .font-great-vibes {
+  font-family: var(--font-greek-fallback);
+  font-style: italic;
+}
+
 
 
 @media (prefers-color-scheme: dark) {

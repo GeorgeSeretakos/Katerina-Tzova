@@ -1,7 +1,23 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useLocale } from "../../../../lib/locale";
 
 export default function CategoryShowcase({ categories = [] }) {
+  const locale = useLocale();
+
+  const M = {
+    en: {
+      viewGallery: "View Gallery",
+    },
+    el: {
+      viewGallery: "Προβολή Gallery",
+    },
+  };
+
+  const T = M[locale];
+
   return (
     <div className="flex flex-col">
       {categories.map((cat, i) => (
@@ -38,7 +54,7 @@ export default function CategoryShowcase({ categories = [] }) {
               {cat.description}
             </p>
             <Link href={cat.href} className="btn-gold">
-              View Gallery
+              {T.viewGallery}
             </Link>
           </div>
         </div>

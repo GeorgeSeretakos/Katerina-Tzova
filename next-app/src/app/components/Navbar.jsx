@@ -3,12 +3,37 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useLocale } from "../../../lib/locale";
+
+const M = {
+  en: {
+    home: "Home",
+    stills: "Stills",
+    films: "Films",
+    about: "About",
+    contact: "Contact",
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
+  },
+  el: {
+    home: "Αρχική",
+    stills: "Φωτογραφίες",
+    films: "Ταινίες",
+    about: "Σχετικά",
+    contact: "Επικοινωνία",
+    openMenu: "Άνοιγμα μενού",
+    closeMenu: "Κλείσιμο μενού",
+  },
+};
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
+  const locale = useLocale();
+  const T = M[locale];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -21,6 +46,11 @@ export default function Navbar() {
     setMobileOpen(false);
   }, [pathname]);
 
+  function setLocale(next) {
+    document.cookie = `locale=${next}; Path=/; Max-Age=${60 * 60 * 24 * 365}; SameSite=Lax`;
+    router.refresh();
+  }
+
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-colors duration-500 ${
@@ -29,9 +59,10 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div className="mx-auto flex items-center justify-between px-8 py-4">
+        {/* Logo */}
         <Link href="/" className="relative h-10 w-48">
-        <img
+          <img
             src="/logo/horizontal_white(2).png"
             alt="Katerina Tzova"
             className="object-contain w-full h-full"
@@ -39,20 +70,26 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden md:flex gap-8 text-[#EAEAEA]">
-          <NavItem href="/" label="Home" />
-          <NavItem href="/stills" label="Stills" />
-          <NavItem href="/films" label="Films" />
-          <NavItem href="/about" label="About" />
-          <NavItem href="/contact" label="Contact" />
+        <div className="hidden md:flex items-center gap-4 text-[#EAEAEA]">
+          <NavItem href="/" label={T.home} />
+          <NavItem href="/stills" label={T.stills} />
+          <NavItem href="/films" label={T.films} />
+          <NavItem href="/about" label={T.about} />
+          <NavItem href="/contact" label={T.contact} />
+
+          {/* Language toggle */}
+          <LangToggle locale={locale} onSelect={setLocale} />
         </div>
 
-        {/* Mobile menu button */}
-        <div className="md:hidden">
+        {/* Mobile controls */}
+        <div className="md:hidden flex items-center gap-4">
+          <LangToggle locale={locale} onSelect={setLocale} compact />
+
           <button
             onClick={() => setMobileOpen((v) => !v)}
             className="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"
-            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-label={mobileOpen ? T.closeMenu : T.openMenu}
+            aria-expanded={mobileOpen}
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -63,11 +100,11 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="md:hidden bg-[#0B0B0C] shadow-md">
           <div className="flex flex-col space-y-3 px-6 py-4 font-medium text-[#EAEAEA]">
-            <NavItem href="/" label="Home" />
-            <NavItem href="/stills" label="Stills" />
-            <NavItem href="/films" label="Films" />
-            <NavItem href="/about" label="About" />
-            <NavItem href="/contact" label="Contact" />
+            <NavItem href="/" label={T.home} />
+            <NavItem href="/stills" label={T.stills} />
+            <NavItem href="/films" label={T.films} />
+            <NavItem href="/about" label={T.about} />
+            <NavItem href="/contact" label={T.contact} />
           </div>
         </div>
       )}
@@ -76,13 +113,46 @@ export default function Navbar() {
 }
 
 function NavItem({ href, label }) {
-
   return (
     <Link
       href={href}
-      className={`inline-flex font-serif items-center px-2 py-1 rounded-sm transition whitespace-nowrap hover:text-[#D4AF37]`}
+      className="inline-flex font-serif items-center px-2 py-1 rounded-sm transition whitespace-nowrap hover:text-[#D4AF37]"
     >
       {label}
     </Link>
+  );
+}
+
+/* EL | EN toggle */
+function LangToggle({ locale, onSelect, compact = false }) {
+  const base = "px-0.5 focus:outline-none";
+  const active = "font-semibold text-[#EAEAEA]";
+  const inactive = "text-[#EAEAEA]/40 hover:text-[#D4AF37]";
+  const size = compact ? "text-xs" : "text-xs md:text-sm";
+
+  return (
+    <div className={`flex items-center ${size}`} role="group" aria-label="Language">
+      <button
+        type="button"
+        onClick={() => onSelect("el")}
+        disabled={locale === "el"}
+        aria-current={locale === "el" ? "true" : undefined}
+        className={`${base} ${locale === "el" ? active : inactive}`}
+        title="Ελληνικά"
+      >
+        EL
+      </button>
+      <span className="mx-1 text-[#EAEAEA]/30 select-none">|</span>
+      <button
+        type="button"
+        onClick={() => onSelect("en")}
+        disabled={locale === "en"}
+        aria-current={locale === "en" ? "true" : undefined}
+        className={`${base} ${locale === "en" ? active : inactive}`}
+        title="English"
+      >
+        EN
+      </button>
+    </div>
   );
 }

@@ -1,20 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import { useLocale } from "../../../../lib/locale";
 
-/**
- * FilmsGrid
- * Props:
- *  - items: Array<{
- *      id: string;
- *      title?: string;
- *      thumbnail?: string; // optional poster image
- *      provider: "youtube" | "vimeo" | "file";
- *      url: string;        // full watch URL (yt/vimeo) OR direct file URL
- *      aspect?: string;    // e.g., "aspect-video" (default) or "aspect-[3/4]"
- *    }>
- */
+function resolveTitle(title, locale) {
+  if (!title) return null;
+  if (typeof title === "string") return title;
+  return title[locale] ?? title.en ?? null;
+}
+
+
 export default function FilmsGrid({ items = [] }) {
+  const locale = useLocale();
   const [activeId, setActiveId] = useState(null);
 
   const play = (id) => setActiveId(id);
@@ -43,7 +40,7 @@ export default function FilmsGrid({ items = [] }) {
             {/* Caption */}
             {item.title && (
               <h3 className="h-[60px] flex items-center justify-center px-3 text-[#EAEAEA]/90 border-t border-white/10 text-center font-serif">
-                {item.title}
+                {resolveTitle(item.title, locale)}
               </h3>
             )}
           </div>

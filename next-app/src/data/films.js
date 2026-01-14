@@ -14,49 +14,70 @@ export const filmsByCategory = {
   weddings: [
     {
       id: "wed-1",
-      title: "Christina & Nikos",
+      title: {
+        en: "Christina & Nikos",
+        el: "Χριστίνα & Νίκος"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=ykZOGUaPPbI",
       thumbnail: "/images/thumbnails/weddings/W_Christina_Nikos.jpg"
     },
     {
       id: "wed-2",
-      title: "Thodoris & Maria",
+      title: {
+        en: "Thodoris & Maria",
+        el: "Θοδωρής & Μαρία"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=eHx0k1jIdeo",
       thumbnail: "/images/thumbnails/weddings/W_Thodoris+Maria_Samtorini.jpg"
     },
     {
       id: "wed-3",
-      title: "Marianna & Kostas",
+      title: {
+        en: "Marianna & Kostas",
+        el: "Μαριάννα & Κώστας"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=r3jpzbzN9N8",
       thumbnail: "/images/thumbnails/weddings/W_Marianna_Kostas.jpg"
     },
     {
       id: "wed-4",
-      title: "Lefteris & Glykeria",
+      title: {
+        en: "Lefteris & Glykeria",
+        el: "Λευτέρης & Γλυκερία"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=XkFyVM73HmU",
       thumbnail: "/images/thumbnails/weddings/W_LefterisGlykeria.jpg"
     },
     {
       id: "wed-5",
-      title: "Vasilis & Zoe",
+      title: {
+        en: "Vasilis & Zoe",
+        el: "Βασίλης & Ζωή"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=k2x7ETkexxE",
       thumbnail: "/images/thumbnails/weddings/W_Vasilis_Zoe.jpg"
     },
     {
       id: "wed-6",
-      title: "Sofie & Meletis",
+      title: {
+        en: "Sofie & Meletis",
+        el: "Σόφη & Μελέτης"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=pd9GvbADJN4",
       thumbnail: "/images/thumbnails/weddings/W_Sofie+Meletis.png"
     },
     {
       id: "wed-7",
-      title: "Elia & Maurizio",
+      title: {
+        en: "Elia & Maurizio",
+        el: "Έλια & Μαυρίζιο"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=RBJSHJeI0So",
       thumbnail: "/images/thumbnails/weddings/W_EliaMaurizio.jpg"
@@ -66,42 +87,60 @@ export const filmsByCategory = {
   baptisms: [
     {
       id: "bap-1",
-      title: "Dimitris",
+      title: {
+        en: "Dimitris",
+        el: "Δημήτρης"
+      },
       provider: "vimeo",
       url: "https://vimeo.com/1149916409?fl=ip&fe=ec",
       thumbnail: "/images/thumbnails/baptisms/V_Dimitris_180725.jpg"
     },
     {
       id: "bap-2",
-      title: "Ioannis Marios",
+      title: {
+        en: "Ioannis Marios",
+        el: "Ιωάννης Μάριος"
+      },
       provider: "vimeo",
       url: "https://vimeo.com/1149924847?fl=ip&fe=ec",
       thumbnail: "/images/thumbnails/baptisms/V_IoannisMarios.jpg"
     },
     {
       id: "bap-3",
-      title: "Artemis",
+      title: {
+        en: "Artemis",
+        el: "Άρτεμις"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=TsrMhnxOMQQ",
       thumbnail: "/images/thumbnails/baptisms/V_Artemis_210925.jpg"
     },
     {
       id: "bap-4",
-      title: "Irini",
+      title: {
+        en: "Irini",
+        el: "Ειρήνη"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=Mr6w60CRDY8",
       thumbnail: "/images/thumbnails/baptisms/V_Irini.jpg"
     },
     {
       id: "bap-5",
-      title: "Georgia",
+      title: {
+        en: "Georgia",
+        el: "Γεωργία"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=3WRtc23hd-A",
       thumbnail: "/images/thumbnails/baptisms/V_Georgia.jpg"
     },
     {
       id: "bap-6",
-      title: "Theologos",
+      title: {
+        en: "Theologos",
+        el: "Θεολόγος"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=87mUlBWa9gU",
       thumbnail: "/images/thumbnails/baptisms/V_theologos.jpg"
@@ -118,7 +157,10 @@ export const filmsByCategory = {
     },
     {
       id: "mov-2",
-      title: "I remember everything - trailer",
+      title: {
+        en: "I remember everything - trailer",
+        el: "Τα θυμάμαι όλα - trailer"
+      },
       provider: "youtube",
       url: "https://youtu.be/vioWBhg3C3U?si=C9nv3zytTNiuaFie",
       thumbnail: "/images/thumbnails/movies/thimamai.jpg",
@@ -132,7 +174,10 @@ export const filmsByCategory = {
     },
     {
       id: "mov-4",
-      title: "Ημερολόγια Εγκλεισμού - trailer",
+      title: {
+        en: "Confinement Diaries - trailer",
+        el: "Ημερολόγια Εγκλεισμού - trailer"
+      },
       provider: "youtube",
       url: "https://youtu.be/zyo-dB_scM8?si=zm2p5s0NmDMgacqh",
       thumbnail: "/images/thumbnails/movies/imerologia.jpg",
@@ -149,7 +194,10 @@ export const filmsByCategory = {
   theatre: [
     {
       id: "the-1",
-      title: "Το βλέμμα του ψαριού - trailer",
+      title: {
+        en: "The Fish’s Gaze - trailer",
+        el: "Το βλέμμα του ψαριού"
+      },
       provider: "youtube",
       url: "https://youtu.be/mD7OJIzJtkU?si=i6rfxsYR7eQ4FX3V",
       thumbnail: "/images/thumbnails//theatre/psari.jpg",
@@ -163,7 +211,10 @@ export const filmsByCategory = {
     },
     {
       id: "the-3",
-      title: "Λευκό Ρόδο",
+      title: {
+        en: "White Rose",
+        el: "Λευκό Ρόδο"
+      },
       provider: "youtube",
       url: "https://youtu.be/tebfSiAL4X0?si=gpkqr1PubiRg7HFD",
       thumbnail: "/images/thumbnails//theatre/lefko_rodo.jpg",
@@ -173,7 +224,10 @@ export const filmsByCategory = {
   advertisement: [
     {
       id: "adv-1",
-      title: "Motivo Dance School",
+      title: {
+        en: "Motivo Dance School",
+        el: "Σχολή Χορού Motivo"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=HvvWdtTdUEY",
       thumbnail: "/images/thumbnails/advertisement/dance_school.jpg"
@@ -187,35 +241,50 @@ export const filmsByCategory = {
     },
     {
       id: "adv-3",
-      title: "Svetlana Marozaite jewellery (rings)",
+      title: {
+        en: "Svetlana Marozaite jewellery (rings)",
+        el: "Svetlana Marozaite jewellery (δαχτυλίδια)",
+      },
       provider: "youtube",
       url: "https://www.youtube.com/shorts/zqyv6uzsKz8",
       thumbnail: "/images/thumbnails/advertisement/rings.png"
     },
     {
       id: "adv-4",
-      title: "Svetlana Marozaite jewellery (necklaces)",
+      title: {
+        en: "Svetlana Marozaite jewellery (necklaces)",
+        el: "Svetlana Marozaite jewellery (κολιέ)"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/shorts/GDRN00yNfLU",
       thumbnail: "/images/thumbnails/advertisement/necklaces.png"
     },
     {
       id: "adv-5",
-      title: "Svetlana Marozaite jewellery (earings)",
+      title: {
+        en: "Svetlana Marozaite jewellery (earings)",
+        el: "Svetlana Marozaite jewellery (σκουλαρίκια)"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/shorts/a5Pb_t440dI",
       thumbnail: "/images/thumbnails/advertisement/earings.png"
     },
     {
       id: "adv-6",
-      title: "Svetlana Marozaite jewellery (bracelets)",
+      title: {
+        en: "Svetlana Marozaite jewellery (bracelets)",
+        el: "Svetlana Marozaite jewellery (βραχιόλια)"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/shorts/6KX9KakwinM",
       thumbnail: "/images/thumbnails/advertisement/bracelets.png"
     },
     {
       id: "adv-7",
-      title: "IRC 30YEARS ENGLISH",
+      title: {
+        en: "IRC 30YEARS ENGLISH",
+        el: "Διεθνείς Σχέσεις Πολιτισμού 30Χρόνια"
+      },
       provider: "youtube",
       url: "https://www.youtube.com/watch?v=_fj839Iz9L4",
       thumbnail: "/images/thumbnails/advertisement/irc.png"
