@@ -2,6 +2,8 @@ import FilmsGrid from "../../components/galleries/FilmsGrid";
 import { filmsByCategory } from "../../../data/films";
 import CategoryNotFound from "../../components/CategoryNotFound";
 
+export const dynamic = "force-static";
+
 export function generateStaticParams() {
   return Object.keys(filmsByCategory).map((category) => ({
     category,
