@@ -66,15 +66,11 @@ export const metadata = {
 
 /* ---------------- Layout ---------------- */
 
-export default async function RootLayout({
-                                             children,
-                                         }: {
-    children: React.ReactNode;
-}) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
     const cookieStore = await cookies();
 
-    const locale =
-        cookieStore.getAll().find((c) => c.name === "locale")?.value ?? "el";
+    const locale = cookieStore.getAll()
+        .find((c) => c.name === "locale")?.value ?? "el";
 
     return (
         <html lang={locale}>
